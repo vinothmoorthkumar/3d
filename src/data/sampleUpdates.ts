@@ -62,5 +62,11 @@ export function sampleNews(lang: Lang): NewsItem[] {
         'Sample headline – placeholder content for this demo',
         'Sample headline – no real news is shown',
       ];
-  return titles.map((title, i) => ({ id: `sample-news-${i + 1}`, title, sample: true }));
+  // Thumbnails are cropped from the site's own credited Earth imagery (see public/CREDITS.md).
+  return titles.map((title, i) => ({
+    id: `sample-news-${i + 1}`,
+    title,
+    image: `/images/news-sample-${i + 1}.webp`,
+    sample: true,
+  }));
 }

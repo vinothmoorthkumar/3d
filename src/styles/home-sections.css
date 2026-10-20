@@ -796,13 +796,8 @@
   margin-bottom: 0;
 }
 
-.feed li .sample-badge {
-  flex: none;
-  margin-bottom: 0;
-}
-
 .feed__title {
   color: var(--ink);
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.5;
 }

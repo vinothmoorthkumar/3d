@@ -104,7 +104,6 @@ export default function Updates() {
               {news.items.map((n) => (
                 <li key={n.id} className={n.sample ? 'feed__item--sample' : undefined}>
                   {n.image && <img src={n.image} alt="" width={60} height={60} />}
-                  {n.sample && <span className="sample-badge">{c.jobs.sampleBadge}</span>}
                   {n.link ? <External href={n.link}>{n.title}</External> : <span className="feed__title">{n.title}</span>}
                 </li>
               ))}

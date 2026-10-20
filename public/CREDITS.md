@@ -27,6 +27,8 @@ All text, images, icons and the video on this page come from the UN Careers home
 | File | Source | Licence |
 | --- | --- | --- |
 | blue-marble-* | "The Blue Marble", Apollo 17, NASA — https://images.nasa.gov/details/as17-148-22727 (shown only when WebGL is unavailable) | Public domain |
+| news-sample-1.webp | Cropped from blue-marble-640.webp above; thumbnail for a demo-mode sample news headline | Public domain |
+| news-sample-2.webp, news-sample-3.webp | Cropped from the Solar System Scope Earth day and night maps (`public/textures/`); thumbnails for demo-mode sample news headlines | CC BY 4.0 |
 
 ## Fonts and libraries
 

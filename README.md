@@ -55,7 +55,7 @@ By default the Job Openings list shows **24 sample jobs** from `src/data/sampleJ
 - Each sample has a `SAMPLE-0001`-style reference, a "Sample" badge and a dashed border. The list header says "Sample data – these are not real job openings" (French: "Données fictives – ces postes ne sont pas réels").
 - Sample cards have no "View Job Description" link, because there is no real posting to open.
 - Samples use real duty stations, job networks and categories from the official filters, so the keyword, Duty Station, Job Network and Category filters, Clear Filters, "See More" paging and the hero search all work. Dates are relative to today.
-- Announcements and Latest News also show placeholders from `src/data/sampleUpdates.ts` (2 announcements, 3 headlines), each with a "Sample" badge under a "Sample data" note. The sample headlines are not links. The announcement buttons go only to official careers.un.org pages. The feeds are not called in demo mode.
+- Announcements and Latest News also show placeholders from `src/data/sampleUpdates.ts` (2 announcements with "Sample" badges, 3 headlines with Earth-imagery thumbnails) under a "Sample data" warning box. The sample headlines are not links. The announcement buttons go only to official careers.un.org pages. The feeds are not called in demo mode.
 - Only the main list is affected. The Consultancies/Internships dialogs, announcements and news stay live.
 
 Switch to real openings with an environment variable, e.g. in a `.env.local` file:
