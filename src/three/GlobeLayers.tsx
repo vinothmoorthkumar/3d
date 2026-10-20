@@ -69,7 +69,7 @@ export function DutyStationDots({ active = [], opacity = 0.75, size = 9 }: DotsP
         uniforms: {
           uPixelRatio: { value: Math.min(window.devicePixelRatio, 2) },
           uScale: { value: 1 },
-          uColor: { value: new THREE.Color('#8fd3ff') },
+          uColor: { value: new THREE.Color('#7fceec') },
           uActiveColor: { value: new THREE.Color('#ffffff') },
           uOpacity: { value: opacity },
         },
@@ -101,7 +101,7 @@ export function DutyStationDots({ active = [], opacity = 0.75, size = 9 }: DotsP
 }
 
 /** Pulsing ring on the surface at a location. */
-export function PulseRing({ location, color = '#5bc2f5', size = 0.028, visible = 1 }: { location: Location; color?: string; size?: number; visible?: number }) {
+export function PulseRing({ location, color = '#40b6e4', size = 0.028, visible = 1 }: { location: Location; color?: string; size?: number; visible?: number }) {
   const ref = useRef<THREE.Mesh>(null);
   const { position, quaternion } = useMemo(() => {
     const p = latLngToVec3(location.lat, location.lng, 1.006);
@@ -135,7 +135,7 @@ export function HubArcs({ codes, progress }: { codes: string[]; progress: { curr
       const pts = arcCurve(origin, dest, 1.004).getPoints(80);
       const g = new THREE.BufferGeometry().setFromPoints(pts);
       const colors = new Float32Array(pts.length * 3);
-      const a = new THREE.Color('#5bc2f5');
+      const a = new THREE.Color('#40b6e4');
       const b = new THREE.Color('#ffffff');
       pts.forEach((_, i) => a.clone().lerp(b, i / pts.length).toArray(colors, i * 3));
       g.setAttribute('color', new THREE.BufferAttribute(colors, 3));
@@ -190,7 +190,7 @@ export function Stars({ count = 1200, radius = 40 }: { count?: number; radius?: 
   useEffect(() => () => geometry.dispose(), [geometry]);
   return (
     <points geometry={geometry} raycast={() => null}>
-      <pointsMaterial color="#cfe3ff" size={0.08} sizeAttenuation transparent opacity={0.55} depthWrite={false} />
+      <pointsMaterial color="#bfe6f6" size={0.08} sizeAttenuation transparent opacity={0.55} depthWrite={false} />
     </points>
   );
 }

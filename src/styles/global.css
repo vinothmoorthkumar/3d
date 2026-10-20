@@ -2,31 +2,60 @@
    Design tokens
    ========================================================================== */
 :root {
-  --midnight: #040a18;
-  --navy: #081530;
-  --ocean: #0c2b52;
+  /* UN colour guidance palette. Every colour below comes from it. */
+  /* Primary colours and variations */
   --un-blue: #009edb;
-  --blue-600: #0070b5;
-  --blue-700: #005c96;
-  --cyan: #5bc2f5;
-  --cyan-soft: #9ad8fb;
+  --un-blue-75: #40b6e4;
+  --un-blue-50: #7fceec;
+  --un-blue-25: #bfe6f6;
+  --un-blue-5: #f2fafd;
+  --black: #000000;
+  --black-75: #404040;
+  --black-68: #525252;
+  --black-50: #7f7f7f;
+  --black-25: #bfbfbf;
+  --black-4: #f5f5f5;
   --white: #ffffff;
-  --paper: #f3f6fa;
-  --mist: #e6edf5;
-  --ink: #0a1628;
-  --ink-2: #33445c;
-  --gray: #5b6b80;
-  --line: #d7e0eb;
+  /* Secondary colours and variations */
+  --darker-blue: #1c4969;
+  --raspberry: #a01d43;
+  --avocado: #2d5f37;
+  --information-blue: #0a5a82;
+  --success-green: #509e3e;
+  --warning-yellow: #fd9e37;
+  --error-red: #fd3c2d;
+  --golden-brown: #aa5d00;
+  --darker-blue-25: #c6d1d9;
+  --information-blue-25: #c2d9e6;
+  --success-green-25: #d3e6ce;
+  --warning-yellow-25: #fee6cd;
+  --error-red-25: #fececa;
+  --darker-blue-5: #f3f6f7;
+
+  /* Roles. Text pairs reach AAA (7:1); UN Blue is never used for buttons or body text. */
+  --midnight: var(--black); /* backdrop of the 3D scenes */
+  --navy: var(--darker-blue); /* dark sections */
+  --ocean: var(--information-blue);
+  --blue-600: var(--information-blue); /* links, primary buttons: 7.6:1 on white */
+  --blue-700: var(--darker-blue); /* hover: 9.6:1 on white */
+  --cyan: var(--un-blue-25); /* accent text on dark: 7.3:1 on Darker Blue, 16:1 on black */
+  --cyan-soft: var(--un-blue-25);
+  --paper: var(--un-blue-5);
+  --mist: var(--black-4);
+  --ink: var(--black);
+  --ink-2: var(--black-75); /* 10.4:1 on white */
+  --gray: var(--black-68); /* 7.8:1 on white */
+  --line: var(--black-25);
   --line-dark: rgba(255, 255, 255, 0.14);
-  --text-dark-2: rgba(229, 239, 252, 0.78);
+  --text-dark-2: var(--un-blue-25);
 
   --font-display: 'Inter Tight Variable', 'Inter Tight', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   --radius: 18px;
   --radius-sm: 10px;
-  --shadow: 0 1px 2px rgba(10, 22, 40, 0.06), 0 12px 32px -12px rgba(10, 22, 40, 0.18);
-  --shadow-lg: 0 30px 60px -20px rgba(10, 22, 40, 0.35);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 12px 32px -12px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 30px 60px -20px rgba(0, 0, 0, 0.35);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --header-h: 72px;
   --gutter: clamp(16px, 4vw, 48px);
@@ -102,7 +131,7 @@ ol {
 }
 
 :focus-visible {
-  outline: 3px solid var(--un-blue);
+  outline: 3px solid var(--information-blue);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -112,7 +141,7 @@ ol {
 .final :focus-visible,
 .site-footer :focus-visible,
 .site-header :focus-visible {
-  outline-color: var(--cyan-soft);
+  outline-color: var(--un-blue-50);
 }
 
 .sr-only {
@@ -189,6 +218,8 @@ ol {
 /* ==========================================================================
    Buttons and links
    ========================================================================== */
+/* Button colours follow the UN colour guidance: Information Blue primary, white secondary with a
+   UN Blue border, UN Blue 25% hover, Absolute Black 4% disabled. All text pairs are AAA. */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -196,7 +227,7 @@ ol {
   gap: 0.5em;
   min-height: 48px;
   padding: 0 22px;
-  border-radius: 999px;
+  border-radius: 4px;
   border: 1px solid transparent;
   font-weight: 600;
   font-size: 0.95rem;
@@ -216,7 +247,10 @@ ol {
 }
 
 .btn:disabled {
-  opacity: 0.6;
+  background: var(--black-4);
+  border-color: transparent;
+  color: var(--black-75);
+  box-shadow: none;
   cursor: progress;
   transform: none;
 }
@@ -234,13 +268,15 @@ ol {
 }
 
 .btn--primary {
-  background: var(--blue-600);
+  background: var(--information-blue);
   color: var(--white);
-  box-shadow: 0 10px 30px -12px rgba(0, 112, 181, 0.8);
+  box-shadow: 0 10px 30px -12px rgba(10, 90, 130, 0.8);
 }
 
-.btn--primary:hover {
-  background: var(--blue-700);
+.btn--primary:hover,
+.btn--outline:hover {
+  background: var(--un-blue-25);
+  color: var(--darker-blue);
 }
 
 .btn--ghost {
@@ -257,13 +293,8 @@ ol {
 
 .btn--outline {
   background: var(--white);
-  border-color: var(--line);
-  color: var(--ink);
-}
-
-.btn--outline:hover {
-  border-color: var(--blue-600);
-  color: var(--blue-700);
+  border-color: var(--un-blue);
+  color: var(--darker-blue);
 }
 
 .link-arrow {
@@ -280,6 +311,8 @@ ol {
 
 .link-arrow:hover {
   color: var(--blue-700);
+  border-bottom-width: 2px;
+  padding-bottom: 1px;
 }
 
 .link-arrow .ext-icon {
@@ -317,7 +350,7 @@ ol {
 }
 
 .site-header.is-solid {
-  background: rgba(5, 12, 28, 0.94);
+  background: rgba(0, 0, 0, 0.94);
   backdrop-filter: blur(14px) saturate(140%);
   box-shadow: 0 1px 0 var(--line-dark);
 }
@@ -424,7 +457,7 @@ ol {
   height: calc(100vh - var(--header-h));
   height: calc(100svh - var(--header-h));
   overflow-y: auto;
-  background: rgba(5, 12, 28, 0.98);
+  background: rgba(0, 0, 0, 0.98);
 }
 
 .mobile-menu[hidden] {
@@ -454,8 +487,8 @@ ol {
   position: relative;
   color: var(--white);
   background:
-    radial-gradient(120% 80% at 75% 35%, #0b2550 0%, rgba(8, 21, 48, 0) 60%),
-    radial-gradient(90% 60% at 10% 100%, #0a1f45 0%, rgba(4, 10, 24, 0) 70%),
+    radial-gradient(120% 80% at 75% 35%, var(--darker-blue) 0%, rgba(28, 73, 105, 0) 60%),
+    radial-gradient(90% 60% at 10% 100%, var(--darker-blue) 0%, rgba(0, 0, 0, 0) 70%),
     var(--midnight);
 }
 
@@ -477,8 +510,8 @@ ol {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(4, 10, 24, 0.72) 0%, rgba(4, 10, 24, 0.3) 38%, rgba(4, 10, 24, 0) 60%),
-    linear-gradient(180deg, rgba(4, 10, 24, 0.5) 0%, rgba(4, 10, 24, 0) 18%, rgba(4, 10, 24, 0) 80%, rgba(4, 10, 24, 0.6) 100%);
+    linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.3) 38%, rgba(0, 0, 0, 0) 60%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 .cinematic__content {
@@ -574,6 +607,11 @@ ol {
 
 .hero__search input:focus {
   outline: none;
+}
+
+/* The button sits inside the pill-shaped search box, so it follows the same rounded shape. */
+.hero__search .btn {
+  border-radius: 999px;
 }
 
 .word {
@@ -708,7 +746,7 @@ ol {
 .chapter__card {
   width: min(420px, 100%);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, rgba(14, 30, 60, 0.72), rgba(6, 14, 32, 0.86));
+  background: linear-gradient(180deg, rgba(28, 73, 105, 0.72), rgba(0, 0, 0, 0.86));
   border: 1px solid var(--line-dark);
   backdrop-filter: blur(16px) saturate(130%);
   overflow: hidden;
@@ -738,7 +776,7 @@ ol {
   font-size: 0.82rem;
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.92);
-  background: linear-gradient(180deg, rgba(4, 10, 24, 0) 0%, rgba(4, 10, 24, 0.85) 70%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 70%);
 }
 
 .chapter__body {
@@ -841,7 +879,7 @@ ol {
 
 .section--dark {
   background:
-    radial-gradient(80% 70% at 20% 40%, #0d2c58 0%, rgba(8, 21, 48, 0) 70%),
+    radial-gradient(80% 70% at 20% 40%, var(--darker-blue) 0%, rgba(28, 73, 105, 0) 70%),
     var(--navy);
   color: var(--white);
 }
@@ -913,7 +951,7 @@ ol {
 .presence__select select {
   appearance: none;
   padding-right: 36px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2333445c' stroke-width='1.6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23404040' stroke-width='1.6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
   text-overflow: ellipsis;
@@ -923,7 +961,7 @@ ol {
 .search select:focus {
   outline: none;
   border-color: var(--blue-600);
-  box-shadow: 0 0 0 3px rgba(0, 112, 181, 0.2);
+  box-shadow: 0 0 0 3px rgba(10, 90, 130, 0.2);
 }
 
 .input-icon {
@@ -946,6 +984,11 @@ ol {
 .search__actions {
   display: flex;
   gap: 10px;
+}
+
+/* Same corner radius as the text box and selects beside them. */
+.search__actions .btn {
+  border-radius: var(--radius-sm);
 }
 
 .results {
@@ -996,7 +1039,7 @@ ol {
 .job-card:focus-within {
   transform: translateY(-3px);
   box-shadow: var(--shadow);
-  border-color: #b9cde3;
+  border-color: var(--un-blue);
 }
 
 .job-card__title {
@@ -1018,7 +1061,7 @@ ol {
   display: block;
   height: 14px;
   border-radius: 6px;
-  background: linear-gradient(90deg, var(--mist) 0%, #f4f7fb 50%, var(--mist) 100%);
+  background: linear-gradient(90deg, var(--mist) 0%, var(--white) 50%, var(--mist) 100%);
   background-size: 200% 100%;
   animation: shimmer 1.4s linear infinite;
 }
@@ -1095,7 +1138,7 @@ ol {
   gap: 8px;
   padding: 6px 12px;
   border-radius: 999px;
-  background: rgba(4, 10, 24, 0.72);
+  background: rgba(0, 0, 0, 0.72);
   backdrop-filter: blur(8px);
   color: var(--white);
   font-size: 0.78rem;
@@ -1292,7 +1335,7 @@ ol {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--blue-600), var(--un-blue));
+  background: var(--information-blue);
   color: var(--white);
   font-weight: 600;
   font-size: 0.9rem;
@@ -1355,7 +1398,7 @@ ol {
   align-items: flex-start;
   overflow: hidden;
   color: var(--white);
-  background: radial-gradient(100% 60% at 50% 100%, #0d2e5c 0%, var(--midnight) 70%);
+  background: radial-gradient(100% 60% at 50% 100%, var(--darker-blue) 0%, var(--midnight) 70%);
 }
 
 .final__scene {
@@ -1365,7 +1408,7 @@ ol {
 
 /* Footer */
 .site-footer {
-  background: #030814;
+  background: var(--black);
   color: var(--text-dark-2);
   padding: 72px 0 32px;
   font-size: 0.9rem;
@@ -1460,7 +1503,7 @@ ol {
   }
 
   .cinematic__shade {
-    background: linear-gradient(180deg, rgba(4, 10, 24, 0.82) 0%, rgba(4, 10, 24, 0.55) 45%, rgba(4, 10, 24, 0) 70%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.55) 45%, rgba(0, 0, 0, 0) 70%);
   }
 
   .hero {

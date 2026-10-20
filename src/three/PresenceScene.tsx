@@ -32,7 +32,7 @@ function HubMarker({ location, selected, onSelect }: { location: Location; selec
     <group position={position}>
       <mesh>
         <sphereGeometry args={[selected ? 0.018 : 0.013, 16, 16]} />
-        <meshBasicMaterial color={selected || hovered ? '#ffffff' : '#5bc2f5'} />
+        <meshBasicMaterial color={selected || hovered ? '#ffffff' : '#40b6e4'} />
       </mesh>
       {/* Larger invisible target makes small markers easy to hit with a finger. */}
       <mesh

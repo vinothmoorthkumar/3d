@@ -111,7 +111,7 @@
   place-items: center;
   border-radius: 50%;
   color: var(--white);
-  background: rgba(0, 112, 181, 0.88);
+  background: rgba(10, 90, 130, 0.88);
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.14);
   transition: transform 0.3s var(--ease);
 }
@@ -292,7 +292,7 @@
 .explore-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: #b9cde3;
+  border-color: var(--un-blue);
 }
 
 .explore-card .ext-icon {
@@ -338,7 +338,7 @@
 }
 
 .dialog::backdrop {
-  background: rgba(4, 10, 24, 0.72);
+  background: rgba(0, 0, 0, 0.72);
   backdrop-filter: blur(4px);
 }
 
@@ -477,7 +477,7 @@
   margin-top: 18px;
   font-size: 0.85rem;
   max-width: 30rem;
-  color: rgba(229, 239, 252, 0.7);
+  color: var(--un-blue-25);
 }
 
 .site-footer__notice a {
@@ -542,7 +542,7 @@
 }
 
 .site-footer__bottom a {
-  color: rgba(229, 239, 252, 0.75);
+  color: var(--un-blue-25);
   text-decoration: none;
 }
 
@@ -630,6 +630,10 @@
 
 .announcement__actions .btn {
   color: var(--white);
+}
+
+.announcement__actions .btn:hover {
+  color: var(--darker-blue);
 }
 
 .announcement__image img {
@@ -748,7 +752,7 @@
   gap: 8px;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #8a4b00;
+  color: var(--black-75);
 }
 
 .sample-note::before {
@@ -756,7 +760,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #e08a00;
+  background: var(--warning-yellow);
 }
 
 .job-card--sample {
@@ -768,8 +772,8 @@
   margin-bottom: 10px;
   padding: 3px 10px;
   border-radius: 999px;
-  background: #fff3df;
-  color: #8a4b00;
+  background: var(--warning-yellow-25);
+  color: var(--black-75);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
