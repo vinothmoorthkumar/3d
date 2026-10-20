@@ -2,13 +2,16 @@ import { useEffect, useRef, useState } from 'react';
 import { useLang } from '../i18n';
 import { fetchAnnouncements, fetchLatestNews, type Announcement, type NewsItem } from '../lib/unApi';
 import { useInView } from '../lib/hooks';
+import { DEMO_MODE } from '../lib/demo';
+import { sampleAnnouncements, sampleNews } from '../data/sampleUpdates';
 import { External } from './ui';
 
 type Feed<T> = { status: 'loading' | 'ready' | 'error'; items: T[] };
 
-function AnnouncementView({ a }: { a: Announcement }) {
+function AnnouncementView({ a, badge }: { a: Announcement; badge: string }) {
   return (
-    <article className="announcement">
+    <article className={`announcement ${a.sample ? 'announcement--sample' : ''}`}>
+      {a.sample && <span className="sample-badge">{badge}</span>}
       {a.blocks.map((b, i) => {
         if (b.type === 'heading') return <h3 key={i}>{b.text}</h3>;
         if (b.type === 'image') {
@@ -45,7 +48,7 @@ function AnnouncementView({ a }: { a: Announcement }) {
   );
 }
 
-/** Announcements and Latest News, loaded live from the same feeds the home page uses. */
+/** Announcements and Latest News, loaded live from the same feeds the home page uses (or samples in demo mode). */
 export default function Updates() {
   const { c, lang } = useLang();
   const ref = useRef<HTMLElement>(null);
@@ -55,6 +58,11 @@ export default function Updates() {
 
   useEffect(() => {
     if (!seen) return;
+    if (DEMO_MODE) {
+      setAnnouncements({ status: 'ready', items: sampleAnnouncements(lang) });
+      setNews({ status: 'ready', items: sampleNews(lang) });
+      return;
+    }
     const ctrl = new AbortController();
     setAnnouncements({ status: 'loading', items: [] });
     setNews({ status: 'loading', items: [] });
@@ -72,12 +80,17 @@ export default function Updates() {
 
   return (
     <section className="updates section section--light" id="updates" ref={ref}>
+      {DEMO_MODE && (
+        <div className="container">
+          <p className="sample-note">{c.updates.sampleData}</p>
+        </div>
+      )}
       <div className={`container updates__grid ${showAnnouncements ? '' : 'updates__grid--single'}`}>
         {showAnnouncements && (
           <div className="feed feed--announcements" data-reveal>
             <h2>{c.updates.announcements}</h2>
             {hasAnnouncements ? (
-              announcements.items.map((a) => <AnnouncementView a={a} key={a.id} />)
+              announcements.items.map((a) => <AnnouncementView a={a} badge={c.jobs.sampleBadge} key={a.id} />)
             ) : (
               <p className="feed__state">{c.updates.announcementsEmpty}</p>
             )}
@@ -89,9 +102,10 @@ export default function Updates() {
             <h2>{c.updates.news}</h2>
             <ul>
               {news.items.map((n) => (
-                <li key={n.link}>
+                <li key={n.id} className={n.sample ? 'feed__item--sample' : undefined}>
                   {n.image && <img src={n.image} alt="" width={60} height={60} />}
-                  <External href={n.link}>{n.title}</External>
+                  {n.sample && <span className="sample-badge">{c.jobs.sampleBadge}</span>}
+                  {n.link ? <External href={n.link}>{n.title}</External> : <span className="feed__title">{n.title}</span>}
                 </li>
               ))}
             </ul>

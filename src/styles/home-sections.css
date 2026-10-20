@@ -775,3 +775,30 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+/* Demo-mode sample announcements and news. */
+.updates .sample-note {
+  margin-bottom: 20px;
+}
+
+.announcement--sample {
+  padding: 16px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.announcement--sample .sample-badge {
+  justify-self: start;
+  margin-bottom: 0;
+}
+
+.feed li .sample-badge {
+  flex: none;
+  margin-bottom: 0;
+}
+
+.feed__title {
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.4;
+}

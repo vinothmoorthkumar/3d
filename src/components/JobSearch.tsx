@@ -5,13 +5,11 @@ import { jobDetailUrl, officialSearchUrl, type Content } from '../data/content';
 import { useLang } from '../i18n';
 import { formatDate, searchJobs, type Job, type JobFilters } from '../lib/unApi';
 import { searchSampleJobs } from '../data/sampleJobs';
+import { DEMO_MODE } from '../lib/demo';
 import { SEARCH_EVENT } from './Hero';
 import { External } from './ui';
 
 const PER_PAGE = 6;
-
-/** Demo mode lists sample jobs instead of live openings. Set VITE_JOBS_MODE=live for real data. */
-const DEMO_MODE = (import.meta.env.VITE_JOBS_MODE ?? 'demo') === 'demo';
 
 type Form = { keyword: string; location: string; network: string; category: string };
 const empty: Form = { keyword: '', location: '', network: '', category: '' };

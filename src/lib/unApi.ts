@@ -148,7 +148,8 @@ function parseAnnouncement(html: string): AnnouncementBlock[] {
   return blocks;
 }
 
-export type Announcement = { id: string; blocks: AnnouncementBlock[] };
+/** `sample` marks demo-mode placeholders (see data/sampleUpdates.ts). */
+export type Announcement = { id: string; blocks: AnnouncementBlock[]; sample?: boolean };
 
 export async function fetchAnnouncements(lang: Lang, signal?: AbortSignal): Promise<Announcement[]> {
   const res = await fetch(`${API}/site/announcement/${lang}`, { signal });
@@ -161,7 +162,8 @@ export async function fetchAnnouncements(lang: Lang, signal?: AbortSignal): Prom
     .filter((a) => a.blocks.length > 0);
 }
 
-export type NewsItem = { title: string; link: string; image?: string };
+/** Sample (demo-mode) items have no link: there is no real story to point to. */
+export type NewsItem = { id: string; title: string; link?: string; image?: string; sample?: boolean };
 
 export async function fetchLatestNews(lang: Lang, signal?: AbortSignal): Promise<NewsItem[]> {
   const res = await fetch(`${API}/site/latestNews?language=${lang}`, { signal });
@@ -171,6 +173,7 @@ export async function fetchLatestNews(lang: Lang, signal?: AbortSignal): Promise
   return list
     .filter((n) => n.title && /^https:\/\/(news\.)?un\.org\//.test(n.link))
     .map((n) => ({
+      id: n.link,
       title: n.title,
       link: n.link,
       // Thumbnails arrive as inline base64 JPEGs; accept nothing else.

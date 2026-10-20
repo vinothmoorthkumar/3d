@@ -233,6 +233,10 @@ function buildContent(lang: Lang) {
       // The French site has no empty-state text, so the block is hidden there when empty.
       announcementsEmpty: fr ? null : 'No announcements have been posted yet',
       news: fr ? 'Actualités' : 'Latest News',
+      // Concept-only: label for demo-mode sample announcements and news.
+      sampleData: fr
+        ? 'Données fictives – contenu d’exemple, pas de véritables annonces ni actualités'
+        : 'Sample data – placeholder content, not real announcements or news',
     },
     spotlight: {
       heading: fr ? 'Pleins feux sur notre personnel' : 'Staff in the Spotlight',
