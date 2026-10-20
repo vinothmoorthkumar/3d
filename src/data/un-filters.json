@@ -1,0 +1,3189 @@
+{
+ "source": "https://careers.un.org/api/public/opening/jo-filter/list/v2/{en,fr}",
+ "retrieved": "2026-10-20T09:15:20.734Z",
+ "note": "Snapshot of official UN Careers search filters. Locations are duty stations listed in the search filters, not current vacancies.",
+ "jobNetworks": [
+  {
+   "code": "DEVNET",
+   "name": {
+    "en": "Economic, Social and Development",
+    "fr": "Questions économiques et sociales et développement"
+   }
+  },
+  {
+   "code": "ITECNET",
+   "name": {
+    "en": "Information and Telecommunication Technology",
+    "fr": "Technologies de l’information et télécommunications"
+   }
+  },
+  {
+   "code": "SAFETYNET",
+   "name": {
+    "en": "Internal Security and Safety",
+    "fr": "Sûreté et sécurité internes"
+   }
+  },
+  {
+   "code": "LEGALNET",
+   "name": {
+    "en": "Legal",
+    "fr": "Affaires juridiques"
+   }
+  },
+  {
+   "code": "LOGNET",
+   "name": {
+    "en": "Logistics, Transportation and Supply Chain",
+    "fr": "Logistique, transports et chaîne d’approvisionnement"
+   }
+  },
+  {
+   "code": "MAGNET",
+   "name": {
+    "en": "Management and Administration",
+    "fr": "Gestion et administration"
+   }
+  },
+  {
+   "code": "POLNET",
+   "name": {
+    "en": "Political, Peace and Humanitarian",
+    "fr": "Paix et questions politiques et humanitaires"
+   }
+  },
+  {
+   "code": "INFONET",
+   "name": {
+    "en": "Public Information and Conference Management",
+    "fr": "Information et gestion des conférences"
+   }
+  },
+  {
+   "code": "SCINET",
+   "name": {
+    "en": "Science",
+    "fr": "Sciences"
+   }
+  }
+ ],
+ "categories": [
+  {
+   "code": "PD",
+   "name": {
+    "en": "Professional and Higher Categories",
+    "fr": "Administrateurs et des fonctionnaires de rang supérieur"
+   }
+  },
+  {
+   "code": "FS",
+   "name": {
+    "en": "Field Service",
+    "fr": "Service mobile"
+   }
+  },
+  {
+   "code": "GS",
+   "name": {
+    "en": "General Service and Related Categories",
+    "fr": "Agents des services généraux et catégories apparentées"
+   }
+  },
+  {
+   "code": "NPO",
+   "name": {
+    "en": "National Professional Officers",
+    "fr": "Administrateurs recrutés sur le plan national"
+   }
+  },
+  {
+   "code": "INT",
+   "name": {
+    "en": "Affiliate Personnel – Internships",
+    "fr": "Personnel affilié - Stagiaires"
+   }
+  },
+  {
+   "code": "CON",
+   "name": {
+    "en": "Affiliate Personnel – Consultants/Individual Contractors",
+    "fr": "Personnel affilié - Consultants/Vacataires"
+   }
+  }
+ ],
+ "locations": [
+  {
+   "code": "ABECHE",
+   "name": "Abeche",
+   "country": "Chad",
+   "lat": 13.8359,
+   "lng": 20.8434
+  },
+  {
+   "code": "ABIDJAN",
+   "name": "Abidjan",
+   "country": "Côte d'Ivoire",
+   "lat": 5.356362,
+   "lng": -4.030885
+  },
+  {
+   "code": "ABUDHABI",
+   "name": "Abu Dhabi",
+   "country": "United Arab Emirates",
+   "lat": 24.4539,
+   "lng": 54.3773
+  },
+  {
+   "code": "ABUJA",
+   "name": "Abuja",
+   "country": "Nigeria",
+   "lat": 9.0765,
+   "lng": 7.3986
+  },
+  {
+   "code": "ABYEI",
+   "name": "Abyei",
+   "country": "Sudan",
+   "lat": 9.8386,
+   "lng": 28.4864
+  },
+  {
+   "code": "ACCRA",
+   "name": "Accra",
+   "country": "Ghana",
+   "lat": 5.6037,
+   "lng": -0.187
+  },
+  {
+   "code": "ADDISABABA",
+   "name": "Addis Ababa",
+   "country": "Ethiopia",
+   "lat": 8.9806,
+   "lng": 38.7578
+  },
+  {
+   "code": "ADEN",
+   "name": "Aden",
+   "country": "Yemen",
+   "lat": 12.7855,
+   "lng": 45.0187
+  },
+  {
+   "code": "AGADEZ",
+   "name": "Agadez",
+   "country": "Niger",
+   "lat": 16.9742,
+   "lng": 7.9865
+  },
+  {
+   "code": "AHWAR",
+   "name": "Ahwar",
+   "country": "Yemen",
+   "lat": 13.5219,
+   "lng": 46.7116
+  },
+  {
+   "code": "AINZIOUANI",
+   "name": "Ain Ziouani",
+   "country": "Occupied Territories",
+   "lat": 33.1085,
+   "lng": 35.8153
+  },
+  {
+   "code": "ALBASRAH",
+   "name": "Al Basrah",
+   "country": "Iraq",
+   "lat": 30.5258,
+   "lng": 47.7738
+  },
+  {
+   "code": "ALHASAKAH",
+   "name": "Al Hasakah",
+   "country": "Syrian Arab Republic",
+   "lat": 36.5079,
+   "lng": 40.7463
+  },
+  {
+   "code": "ALEPPO",
+   "name": "Aleppo",
+   "country": "Syrian Arab Republic",
+   "lat": 36.2021,
+   "lng": 37.1343
+  },
+  {
+   "code": "ALGIERS",
+   "name": "Algiers",
+   "country": "Algeria",
+   "lat": 36.7538,
+   "lng": 3.0588
+  },
+  {
+   "code": "ALMATYALMAATA",
+   "name": "Almaty(Alma Ata)",
+   "country": "Kazakhstan",
+   "lat": 43.222,
+   "lng": 76.8512
+  },
+  {
+   "code": "AMMAN",
+   "name": "Amman",
+   "country": "Jordan",
+   "lat": 31.9539,
+   "lng": 35.9106
+  },
+  {
+   "code": "AMRETALFAOUAR",
+   "name": "Amret al Faouar",
+   "country": "Syrian Arab Republic",
+   "lat": 33.21569868393443,
+   "lng": 35.90218713209898
+  },
+  {
+   "code": "ANNAJAF",
+   "name": "An Najaf",
+   "country": "Iraq",
+   "lat": 32.088373,
+   "lng": 44.398908
+  },
+  {
+   "code": "ANBAR",
+   "name": "Anbar",
+   "country": "Iraq",
+   "lat": 32.5598,
+   "lng": 41.9196
+  },
+  {
+   "code": "ANKARA",
+   "name": "Ankara",
+   "country": "Turkey",
+   "lat": 39.9334,
+   "lng": 32.8597
+  },
+  {
+   "code": "ANORI",
+   "name": "Anori",
+   "country": "Colombia",
+   "lat": -3.7488,
+   "lng": -61.6591
+  },
+  {
+   "code": "ANTANANARIVO",
+   "name": "Antananarivo",
+   "country": "Madagascar",
+   "lat": -18.8792,
+   "lng": 47.5079
+  },
+  {
+   "code": "APARTADO",
+   "name": "Apartado",
+   "country": "Colombia",
+   "lat": 7.8828,
+   "lng": -76.6247
+  },
+  {
+   "code": "APIA",
+   "name": "Apia",
+   "country": "Samoa",
+   "lat": -13.8507,
+   "lng": -171.7514
+  },
+  {
+   "code": "ARRAMADI",
+   "name": "Ar Ramadi",
+   "country": "Iraq",
+   "lat": 33.4366,
+   "lng": 43.2683
+  },
+  {
+   "code": "ARAUCA",
+   "name": "Arauca",
+   "country": "Colombia",
+   "lat": 7.0762,
+   "lng": -70.7105
+  },
+  {
+   "code": "ARU",
+   "name": "Aru",
+   "country": "Democratic Republic of the Congo",
+   "lat": 2.859,
+   "lng": 30.8384
+  },
+  {
+   "code": "ARUSHA",
+   "name": "Arusha",
+   "country": "United Republic of Tanzania",
+   "lat": -3.3869,
+   "lng": 36.683
+  },
+  {
+   "code": "ASHKHABAD",
+   "name": "Ashkhabad",
+   "country": "Turkmenistan",
+   "lat": 37.9601,
+   "lng": 58.3261
+  },
+  {
+   "code": "ASMARA",
+   "name": "Asmara",
+   "country": "Eritrea",
+   "lat": 15.3229,
+   "lng": 38.9251
+  },
+  {
+   "code": "ASTANA",
+   "name": "Astana",
+   "country": "Kazakhstan",
+   "lat": 51.1605,
+   "lng": 71.4704
+  },
+  {
+   "code": "ASUNCION",
+   "name": "Asuncion",
+   "country": "Paraguay",
+   "lat": -25.2637,
+   "lng": -57.5759
+  },
+  {
+   "code": "ATHENS",
+   "name": "Athens",
+   "country": "Greece",
+   "lat": 37.9838,
+   "lng": 23.7275
+  },
+  {
+   "code": "AWASA",
+   "name": "Awasa",
+   "country": "Ethiopia",
+   "lat": 7.0504,
+   "lng": 38.4955
+  },
+  {
+   "code": "AWEIL",
+   "name": "Aweil",
+   "country": "South Sudan",
+   "lat": 8.7671,
+   "lng": 27.3998
+  },
+  {
+   "code": "BABIL",
+   "name": "Babil",
+   "country": "Iraq",
+   "lat": 32.4682,
+   "lng": 44.5502
+  },
+  {
+   "code": "BAFATA",
+   "name": "Bafata",
+   "country": "Guinea-Bissau",
+   "lat": 12.1735,
+   "lng": -14.653
+  },
+  {
+   "code": "BAGASOLA",
+   "name": "Baga Sola",
+   "country": "Chad",
+   "lat": 13.5333,
+   "lng": 14.3167
+  },
+  {
+   "code": "BAGHDAD",
+   "name": "Baghdad",
+   "country": "Iraq",
+   "lat": 33.3152,
+   "lng": 44.3661
+  },
+  {
+   "code": "BAIDOA",
+   "name": "Baidoa",
+   "country": "Somalia",
+   "lat": 3.1141,
+   "lng": 43.6519
+  },
+  {
+   "code": "BAKU",
+   "name": "Baku",
+   "country": "Azerbaijan",
+   "lat": 40.4093,
+   "lng": 49.8671
+  },
+  {
+   "code": "BAMAKO",
+   "name": "Bamako",
+   "country": "Mali",
+   "lat": 12.6392,
+   "lng": -8.0029
+  },
+  {
+   "code": "BAMBARI",
+   "name": "Bambari",
+   "country": "Central African Republic",
+   "lat": 5.7643,
+   "lng": 20.6705
+  },
+  {
+   "code": "BAMYAN",
+   "name": "Bamyan",
+   "country": "Afghanistan",
+   "lat": 34.81,
+   "lng": 67.8212
+  },
+  {
+   "code": "BANGASSOU",
+   "name": "Bangassou",
+   "country": "Central African Republic",
+   "lat": 4.7379,
+   "lng": 22.8165
+  },
+  {
+   "code": "BANGKOK",
+   "name": "Bangkok",
+   "country": "Thailand",
+   "lat": 13.7563,
+   "lng": 100.5018
+  },
+  {
+   "code": "BANGUI",
+   "name": "Bangui",
+   "country": "Central African Republic",
+   "lat": 4.3947,
+   "lng": 18.5582
+  },
+  {
+   "code": "BANJUL",
+   "name": "Banjul",
+   "country": "Gambia",
+   "lat": 13.4549,
+   "lng": -16.579
+  },
+  {
+   "code": "BARAKA",
+   "name": "Baraka",
+   "country": "Democratic Republic of the Congo",
+   "lat": -4.0939,
+   "lng": 29.0827
+  },
+  {
+   "code": "BARCELONA",
+   "name": "Barcelona",
+   "country": "Spain",
+   "lat": 41.3851,
+   "lng": 2.1734
+  },
+  {
+   "code": "BARRANCABERMEJA",
+   "name": "Barrancabermeja",
+   "country": "Colombia",
+   "lat": 7.0617,
+   "lng": -73.8519
+  },
+  {
+   "code": "BARRANQUILLA",
+   "name": "Barranquilla",
+   "country": "Colombia",
+   "lat": 11.0041,
+   "lng": -74.807
+  },
+  {
+   "code": "BATTAMBANG",
+   "name": "Battambang",
+   "country": "Cambodia",
+   "lat": 13.0957,
+   "lng": 103.2022
+  },
+  {
+   "code": "BEIJING",
+   "name": "Beijing",
+   "country": "China",
+   "lat": 39.9042,
+   "lng": 116.4074
+  },
+  {
+   "code": "BEIRUT",
+   "name": "Beirut",
+   "country": "Lebanon",
+   "lat": 33.8938,
+   "lng": 35.5018
+  },
+  {
+   "code": "BELETUEN",
+   "name": "Belet Uen",
+   "country": "Somalia",
+   "lat": 4.7429,
+   "lng": 45.2009
+  },
+  {
+   "code": "BELGRADE",
+   "name": "Belgrade",
+   "country": "Serbia",
+   "lat": 44.8125,
+   "lng": 20.4612
+  },
+  {
+   "code": "BENDERA",
+   "name": "Bendera",
+   "country": "Democratic Republic of the Congo",
+   "lat": 0.56138889,
+   "lng": 29.47916667
+  },
+  {
+   "code": "BENGHAZI",
+   "name": "Benghazi",
+   "country": "Libya",
+   "lat": 32.1194,
+   "lng": 20.0868
+  },
+  {
+   "code": "BENI",
+   "name": "Beni",
+   "country": "Democratic Republic of the Congo",
+   "lat": 0.499,
+   "lng": 29.4528
+  },
+  {
+   "code": "BENTIU",
+   "name": "Bentiu",
+   "country": "South Sudan",
+   "lat": 9.2315,
+   "lng": 29.8005
+  },
+  {
+   "code": "BERBERATI",
+   "name": "Berberati",
+   "country": "Central African Republic",
+   "lat": 4.2571,
+   "lng": 15.7879
+  },
+  {
+   "code": "BERLIN",
+   "name": "Berlin",
+   "country": "Germany",
+   "lat": 52.52,
+   "lng": 13.405
+  },
+  {
+   "code": "BERN",
+   "name": "Bern",
+   "country": "Switzerland",
+   "lat": 46.948,
+   "lng": 7.4474
+  },
+  {
+   "code": "BERTOUA",
+   "name": "Bertoua",
+   "country": "Cameroon",
+   "lat": 4.5792,
+   "lng": 13.6768
+  },
+  {
+   "code": "BIRAO",
+   "name": "Birao",
+   "country": "Central African Republic",
+   "lat": 10.2933,
+   "lng": 22.7822
+  },
+  {
+   "code": "BISHKEK",
+   "name": "Bishkek",
+   "country": "Kyrgyzstan",
+   "lat": 42.8746,
+   "lng": 74.5698
+  },
+  {
+   "code": "BISSAU",
+   "name": "Bissau",
+   "country": "Guinea-Bissau",
+   "lat": 11.8632,
+   "lng": -15.5843
+  },
+  {
+   "code": "BOGOTA",
+   "name": "Bogota",
+   "country": "Colombia",
+   "lat": 4.711,
+   "lng": -74.0721
+  },
+  {
+   "code": "BONN",
+   "name": "Bonn",
+   "country": "Germany",
+   "lat": 50.7374,
+   "lng": 7.0982
+  },
+  {
+   "code": "BORJONGLISOUTHSUDAN",
+   "name": "Bor (Jongli/South Sudan)",
+   "country": "South Sudan",
+   "lat": 44.0699,
+   "lng": 22.0985
+  },
+  {
+   "code": "BOSASSO",
+   "name": "Bosasso",
+   "country": "Somalia",
+   "lat": 11.2755,
+   "lng": 49.1879
+  },
+  {
+   "code": "BOSSANGOA",
+   "name": "Bossangoa",
+   "country": "Central African Republic",
+   "lat": 6.4977,
+   "lng": 17.4499
+  },
+  {
+   "code": "BOUAR",
+   "name": "Bouar",
+   "country": "Central African Republic",
+   "lat": 5.943,
+   "lng": 15.6002
+  },
+  {
+   "code": "BRASILIA",
+   "name": "Brasilia",
+   "country": "Brazil",
+   "lat": -15.8267,
+   "lng": -47.9218
+  },
+  {
+   "code": "BRAZZAVILLE",
+   "name": "Brazzaville",
+   "country": "Congo",
+   "lat": -4.2634,
+   "lng": 15.2429
+  },
+  {
+   "code": "BRIA",
+   "name": "Bria",
+   "country": "Central African Republic",
+   "lat": 6.539,
+   "lng": 21.991
+  },
+  {
+   "code": "BRIDGETOWN",
+   "name": "Bridgetown",
+   "country": "Barbados",
+   "lat": 13.106,
+   "lng": -59.6132
+  },
+  {
+   "code": "BRINDISI",
+   "name": "Brindisi",
+   "country": "Italy",
+   "lat": 40.6327,
+   "lng": 17.9418
+  },
+  {
+   "code": "BRUSSELS",
+   "name": "Brussels",
+   "country": "Belgium",
+   "lat": 50.8503,
+   "lng": 4.3517
+  },
+  {
+   "code": "BUALE",
+   "name": "Buale",
+   "country": "Somalia",
+   "lat": 1.2318,
+   "lng": 42.7076
+  },
+  {
+   "code": "BUBA",
+   "name": "Buba",
+   "country": "Guinea-Bissau",
+   "lat": 11.592,
+   "lng": -14.9944
+  },
+  {
+   "code": "BUCARAMANGA",
+   "name": "Bucaramanga",
+   "country": "Colombia",
+   "lat": 7.1193,
+   "lng": -73.1227
+  },
+  {
+   "code": "BUDAPEST",
+   "name": "Budapest",
+   "country": "Hungary",
+   "lat": 47.4979,
+   "lng": 19.0402
+  },
+  {
+   "code": "BUEA",
+   "name": "Buea",
+   "country": "Cameroon",
+   "lat": 4.156,
+   "lng": 9.2632
+  },
+  {
+   "code": "BUENAVENTURA",
+   "name": "Buenaventura",
+   "country": "Colombia",
+   "lat": 3.883,
+   "lng": -77.0197
+  },
+  {
+   "code": "BUENOSAIRES",
+   "name": "Buenos Aires",
+   "country": "Argentina",
+   "lat": -34.6037,
+   "lng": -58.3816
+  },
+  {
+   "code": "BUJUMBURA",
+   "name": "Bujumbura",
+   "country": "Burundi",
+   "lat": -3.3614,
+   "lng": 29.3599
+  },
+  {
+   "code": "BUKA",
+   "name": "Buka",
+   "country": "Papua New Guinea",
+   "lat": -5.4237,
+   "lng": 154.6718
+  },
+  {
+   "code": "BUKAVU",
+   "name": "Bukavu",
+   "country": "Democratic Republic of the Congo",
+   "lat": -2.5123,
+   "lng": 28.848
+  },
+  {
+   "code": "BUNIA",
+   "name": "Bunia",
+   "country": "Democratic Republic of the Congo",
+   "lat": 1.5743,
+   "lng": 30.2397
+  },
+  {
+   "code": "BUSAN",
+   "name": "Busan",
+   "country": "Republic of Korea",
+   "lat": 35.1796,
+   "lng": 129.0756
+  },
+  {
+   "code": "BUTEMBO",
+   "name": "Butembo",
+   "country": "Democratic Republic of the Congo",
+   "lat": 0.114,
+   "lng": 29.3018
+  },
+  {
+   "code": "CAIRO",
+   "name": "Cairo",
+   "country": "Egypt",
+   "lat": 30.0444,
+   "lng": 31.2357
+  },
+  {
+   "code": "CALI",
+   "name": "Cali",
+   "country": "Colombia",
+   "lat": 3.4516,
+   "lng": -76.532
+  },
+  {
+   "code": "CAMBRIDGE",
+   "name": "Cambridge",
+   "country": "United Kingdom of Great Britain and Northern Ireland",
+   "lat": 52.2053,
+   "lng": 0.1218
+  },
+  {
+   "code": "CANBERRA",
+   "name": "Canberra",
+   "country": "Australia",
+   "lat": -35.2809,
+   "lng": 149.13
+  },
+  {
+   "code": "3934",
+   "name": "Cape Town",
+   "country": "South Africa",
+   "lat": -33.918861,
+   "lng": 18.4233
+  },
+  {
+   "code": "CARACAS",
+   "name": "Caracas",
+   "country": "Venezuela (Bolivarian Republic of)",
+   "lat": 10.4806,
+   "lng": -66.9036
+  },
+  {
+   "code": "CHARRAS",
+   "name": "Charras",
+   "country": "Colombia",
+   "lat": 45.543,
+   "lng": 0.4174
+  },
+  {
+   "code": "CHISINAU",
+   "name": "Chisinau",
+   "country": "Republic of Moldova",
+   "lat": 47.0105,
+   "lng": 28.8638
+  },
+  {
+   "code": "CIUDADGUAYANA",
+   "name": "Ciudad Guayana",
+   "country": "Venezuela (Bolivarian Republic of)",
+   "lat": 8.3663,
+   "lng": -62.6497
+  },
+  {
+   "code": "COLOMBO",
+   "name": "Colombo",
+   "country": "Sri Lanka",
+   "lat": 6.9271,
+   "lng": 79.8612
+  },
+  {
+   "code": "CONAKRY",
+   "name": "Conakry",
+   "country": "Guinea",
+   "lat": 9.6412,
+   "lng": -13.5784
+  },
+  {
+   "code": "COPENHAGEN",
+   "name": "Copenhagen",
+   "country": "Denmark",
+   "lat": 55.6761,
+   "lng": 12.5683
+  },
+  {
+   "code": "COTABATOCITY",
+   "name": "Cotabato City",
+   "country": "Philippines",
+   "lat": 7.2047,
+   "lng": 124.231
+  },
+  {
+   "code": "COTONOU",
+   "name": "Cotonou",
+   "country": "Benin",
+   "lat": 6.3703,
+   "lng": 2.3912
+  },
+  {
+   "code": "COXSBAZAAR",
+   "name": "Cox's Bazaar",
+   "country": "Bangladesh",
+   "lat": 21.4272,
+   "lng": 92.0058
+  },
+  {
+   "code": "CUCUTA",
+   "name": "Cucuta",
+   "country": "Colombia",
+   "lat": 7.8891,
+   "lng": -72.4967
+  },
+  {
+   "code": "DABEIBA",
+   "name": "Dabeiba",
+   "country": "Colombia",
+   "lat": 6.9974,
+   "lng": -76.2568
+  },
+  {
+   "code": "DADAAB",
+   "name": "Dadaab",
+   "country": "Kenya",
+   "lat": 0.0926,
+   "lng": 40.3191
+  },
+  {
+   "code": "DAKAR",
+   "name": "Dakar",
+   "country": "Senegal",
+   "lat": 14.7167,
+   "lng": -17.4677
+  },
+  {
+   "code": "DAMASCUS",
+   "name": "Damascus",
+   "country": "Syrian Arab Republic",
+   "lat": 33.5138,
+   "lng": 36.2765
+  },
+  {
+   "code": "DAMATURU",
+   "name": "Damaturu",
+   "country": "Nigeria",
+   "lat": 11.747,
+   "lng": 11.9662
+  },
+  {
+   "code": "DAMAZINE",
+   "name": "Damazine",
+   "country": "Sudan",
+   "lat": 11.7855,
+   "lng": 34.3421
+  },
+  {
+   "code": "DARESSALAAM",
+   "name": "Dar es Salaam",
+   "country": "United Republic of Tanzania",
+   "lat": -6.7924,
+   "lng": 39.2083
+  },
+  {
+   "code": "DESE",
+   "name": "Dese",
+   "country": "Ethiopia",
+   "lat": 11.127,
+   "lng": 39.6363
+  },
+  {
+   "code": "DHAKA",
+   "name": "Dhaka",
+   "country": "Bangladesh",
+   "lat": 23.8103,
+   "lng": 90.4125
+  },
+  {
+   "code": "DHIQAR",
+   "name": "Dhi Qar",
+   "country": "Iraq",
+   "lat": 31.1042,
+   "lng": 46.3625
+  },
+  {
+   "code": "DHUSAMAREEB",
+   "name": "Dhusamareeb",
+   "country": "Somalia",
+   "lat": 5.5381,
+   "lng": 46.3865
+  },
+  {
+   "code": "DIFFA",
+   "name": "Diffa",
+   "country": "Niger",
+   "lat": 13.3132,
+   "lng": 12.6159
+  },
+  {
+   "code": "DILI",
+   "name": "Dili",
+   "country": "Timor-Leste",
+   "lat": -8.5569,
+   "lng": 125.5603
+  },
+  {
+   "code": "DIREDAWA",
+   "name": "Dire Dawa",
+   "country": "Ethiopia",
+   "lat": 9.6009,
+   "lng": 41.8501
+  },
+  {
+   "code": "DIYALA",
+   "name": "Diyala",
+   "country": "Iraq",
+   "lat": 33.7733,
+   "lng": 45.1495
+  },
+  {
+   "code": "DJBOUTI",
+   "name": "Djbouti",
+   "country": "Djibouti",
+   "lat": 11.8251,
+   "lng": 42.5903
+  },
+  {
+   "code": "DOHA",
+   "name": "Doha",
+   "country": "Qatar",
+   "lat": 25.2854,
+   "lng": 51.531
+  },
+  {
+   "code": "DOHUKDUHOK",
+   "name": "Dohuk (Duhok)",
+   "country": "Iraq",
+   "lat": 36.8632,
+   "lng": 42.9885
+  },
+  {
+   "code": "DONETSK",
+   "name": "Donetsk",
+   "country": "Ukraine",
+   "lat": 48.0159,
+   "lng": 37.8028
+  },
+  {
+   "code": "DOUALA",
+   "name": "Douala",
+   "country": "Cameroon",
+   "lat": 4.0511,
+   "lng": 9.7679
+  },
+  {
+   "code": "DUBAI",
+   "name": "Dubai",
+   "country": "United Arab Emirates",
+   "lat": 25.2048,
+   "lng": 55.2708
+  },
+  {
+   "code": "DUSHANBE",
+   "name": "Dushanbe",
+   "country": "Tajikistan",
+   "lat": 38.5598,
+   "lng": 68.787
+  },
+  {
+   "code": "EDDAEIN",
+   "name": "Ed Da'ein",
+   "country": "Sudan",
+   "lat": 11.4613,
+   "lng": 26.1241
+  },
+  {
+   "code": "ELFASHER",
+   "name": "El Fasher",
+   "country": "Sudan",
+   "lat": 13.6198,
+   "lng": 25.3549
+  },
+  {
+   "code": "ELGENEINAALJUNAYNAH",
+   "name": "El Geneina (Al Junaynah)",
+   "country": "Sudan",
+   "lat": 13.4479,
+   "lng": 22.4649
+  },
+  {
+   "code": "ELOBEID",
+   "name": "El Obeid",
+   "country": "Sudan",
+   "lat": 13.1782,
+   "lng": 30.2167
+  },
+  {
+   "code": "ENTEBBE",
+   "name": "Entebbe",
+   "country": "Uganda",
+   "lat": 0.0512,
+   "lng": 32.4637
+  },
+  {
+   "code": "ENUGU",
+   "name": "Enugu",
+   "country": "Nigeria",
+   "lat": 6.4584,
+   "lng": 7.5464
+  },
+  {
+   "code": "ERBIL",
+   "name": "Erbil",
+   "country": "Iraq",
+   "lat": 36.1901,
+   "lng": 43.993
+  },
+  {
+   "code": "FAIZABAD",
+   "name": "Faizabad",
+   "country": "Afghanistan",
+   "lat": 26.773,
+   "lng": 82.1458
+  },
+  {
+   "code": "FARCHANASONUSPREFECTUREFARCHANA-GOVTOFFICE",
+   "name": "Farchana (Sonus Prefecture Farchana - gov't office)",
+   "country": "Chad",
+   "lat": 13.5772,
+   "lng": 21.8242
+  },
+  {
+   "code": "FARYAB",
+   "name": "Faryab",
+   "country": "Afghanistan",
+   "lat": 36.0796,
+   "lng": 64.906
+  },
+  {
+   "code": "FIZI",
+   "name": "Fizi",
+   "country": "Democratic Republic of the Congo",
+   "lat": -4.3007,
+   "lng": 28.9441
+  },
+  {
+   "code": "FLORENCIA",
+   "name": "Florencia",
+   "country": "Colombia",
+   "lat": 1.6154,
+   "lng": -75.6042
+  },
+  {
+   "code": "FONSECA",
+   "name": "Fonseca",
+   "country": "Colombia",
+   "lat": 10.8861,
+   "lng": -72.8515
+  },
+  {
+   "code": "FREETOWN",
+   "name": "Freetown",
+   "country": "Sierra Leone",
+   "lat": 8.4657,
+   "lng": -13.2317
+  },
+  {
+   "code": "FUKUOKA",
+   "name": "Fukuoka",
+   "country": "Japan",
+   "lat": 33.5902,
+   "lng": 130.4017
+  },
+  {
+   "code": "GZ",
+   "name": "Gaza",
+   "country": "-",
+   "lat": 31.516667,
+   "lng": 34.45
+  },
+  {
+   "code": "Geneva",
+   "name": "Geneva",
+   "country": "Switzerland",
+   "lat": 46.201269,
+   "lng": 6.152998
+  },
+  {
+   "code": "GOLO",
+   "name": "Golo",
+   "country": "Sudan",
+   "lat": 45.9113,
+   "lng": 14.5463
+  },
+  {
+   "code": "GOMA",
+   "name": "Goma",
+   "country": "Democratic Republic of the Congo",
+   "lat": -1.6585,
+   "lng": 29.2205
+  },
+  {
+   "code": "GORE",
+   "name": "Gore",
+   "country": "Chad",
+   "lat": -46.1041,
+   "lng": 168.9421
+  },
+  {
+   "code": "GOZBEIDA",
+   "name": "Goz Beida",
+   "country": "Chad",
+   "lat": 12.2258,
+   "lng": 21.4127
+  },
+  {
+   "code": "GUATEMALACITY",
+   "name": "Guatemala City",
+   "country": "Guatemala",
+   "lat": 14.6349,
+   "lng": -90.5069
+  },
+  {
+   "code": "GUIGLO",
+   "name": "Guiglo",
+   "country": "Côte d'Ivoire",
+   "lat": 6.5491,
+   "lng": -7.4977
+  },
+  {
+   "code": "GULU",
+   "name": "Gulu",
+   "country": "Uganda",
+   "lat": 2.7724,
+   "lng": 32.2881
+  },
+  {
+   "code": "HANOI",
+   "name": "Hanoi",
+   "country": "Viet Nam",
+   "lat": 21.0278,
+   "lng": 105.8342
+  },
+  {
+   "code": "HARARE",
+   "name": "Harare",
+   "country": "Zimbabwe",
+   "lat": -17.8216,
+   "lng": 31.0492
+  },
+  {
+   "code": "HARGEISA",
+   "name": "Hargeisa",
+   "country": "Somalia",
+   "lat": 9.5624,
+   "lng": 44.077
+  },
+  {
+   "code": "HAVANA",
+   "name": "Havana",
+   "country": "Cuba",
+   "lat": 23.1136,
+   "lng": -82.3666
+  },
+  {
+   "code": "HEBRON",
+   "name": "Hebron",
+   "country": "Occupied Territories",
+   "lat": 31.5326,
+   "lng": 35.0998
+  },
+  {
+   "code": "HERAT",
+   "name": "Herat",
+   "country": "Afghanistan",
+   "lat": 34.3529,
+   "lng": 62.204
+  },
+  {
+   "code": "HODEIDAH",
+   "name": "Hodeidah",
+   "country": "Yemen",
+   "lat": 14.7909,
+   "lng": 42.9709
+  },
+  {
+   "code": "HOMS",
+   "name": "Homs",
+   "country": "Syrian Arab Republic",
+   "lat": 34.7324,
+   "lng": 36.7137
+  },
+  {
+   "code": "IBB",
+   "name": "Ibb",
+   "country": "Yemen",
+   "lat": 13.9721,
+   "lng": 44.1625
+  },
+  {
+   "code": "ICONONZO",
+   "name": "Icononzo",
+   "country": "Colombia",
+   "lat": 4.1765,
+   "lng": -74.5317
+  },
+  {
+   "code": "INCHEONCITY",
+   "name": "Incheon City",
+   "country": "Republic of Korea",
+   "lat": 37.4563,
+   "lng": 126.7052
+  },
+  {
+   "code": "ISLAMABAD",
+   "name": "Islamabad",
+   "country": "Pakistan",
+   "lat": 33.6844,
+   "lng": 73.0479
+  },
+  {
+   "code": "ISMAILIA",
+   "name": "Ismailia",
+   "country": "Egypt",
+   "lat": 30.5965,
+   "lng": 32.2715
+  },
+  {
+   "code": "ISTANBUL",
+   "name": "Istanbul",
+   "country": "Turkey",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  {
+   "code": "ITURI",
+   "name": "Ituri",
+   "country": "Democratic Republic of the Congo",
+   "lat": 1.5958,
+   "lng": 29.4179
+  },
+  {
+   "code": "JAKARTA",
+   "name": "Jakarta",
+   "country": "Indonesia",
+   "lat": -6.2088,
+   "lng": 106.8456
+  },
+  {
+   "code": "JALALABAD",
+   "name": "Jalalabad",
+   "country": "Afghanistan",
+   "lat": 34.4284,
+   "lng": 70.4578
+  },
+  {
+   "code": "JAYAPURAIRIANJAYAPAPUA",
+   "name": "Jayapura(Irian Jaya/Papua)",
+   "country": "Indonesia",
+   "lat": -2.5916,
+   "lng": 140.669
+  },
+  {
+   "code": "JERUSALEM",
+   "name": "Jerusalem",
+   "country": "Israel",
+   "lat": 31.7683,
+   "lng": 35.2137
+  },
+  {
+   "code": "JIJIGA",
+   "name": "Jijiga",
+   "country": "Ethiopia",
+   "lat": 9.3568,
+   "lng": 42.7955
+  },
+  {
+   "code": "JOHANNESBURG",
+   "name": "Johannesburg",
+   "country": "South Africa",
+   "lat": -26.2041,
+   "lng": 28.0473
+  },
+  {
+   "code": "JOWHAR",
+   "name": "Jowhar",
+   "country": "Somalia",
+   "lat": 2.7774,
+   "lng": 45.5016
+  },
+  {
+   "code": "JUBA",
+   "name": "Juba",
+   "country": "South Sudan",
+   "lat": 4.8594,
+   "lng": 31.5713
+  },
+  {
+   "code": "KABKABIYA",
+   "name": "Kabkabiya",
+   "country": "Sudan",
+   "lat": 13.6511,
+   "lng": 24.0904
+  },
+  {
+   "code": "KABUL",
+   "name": "Kabul",
+   "country": "Afghanistan",
+   "lat": 34.5553,
+   "lng": 69.2075
+  },
+  {
+   "code": "KADUGLI",
+   "name": "Kadugli",
+   "country": "Sudan",
+   "lat": 11.0105,
+   "lng": 29.7136
+  },
+  {
+   "code": "KADUNA",
+   "name": "Kaduna",
+   "country": "Nigeria",
+   "lat": 10.5105,
+   "lng": 7.4165
+  },
+  {
+   "code": "KAGABANDORO",
+   "name": "Kaga Bandoro",
+   "country": "Central African Republic",
+   "lat": 6.996,
+   "lng": 19.185
+  },
+  {
+   "code": "KAKUMA",
+   "name": "Kakuma",
+   "country": "Kenya",
+   "lat": 3.7168,
+   "lng": 34.8569
+  },
+  {
+   "code": "KALEHE",
+   "name": "Kalehe",
+   "country": "Democratic Republic of the Congo",
+   "lat": -2.0969,
+   "lng": 28.9048
+  },
+  {
+   "code": "KALEMIE",
+   "name": "Kalemie",
+   "country": "Democratic Republic of the Congo",
+   "lat": -5.9127,
+   "lng": 29.1914
+  },
+  {
+   "code": "KAMANYOLA",
+   "name": "Kamanyola",
+   "country": "Democratic Republic of the Congo",
+   "lat": -2.7405,
+   "lng": 29.0053
+  },
+  {
+   "code": "KAMPALA",
+   "name": "Kampala",
+   "country": "Uganda",
+   "lat": 0.3476,
+   "lng": 32.5825
+  },
+  {
+   "code": "KANANGA",
+   "name": "Kananga",
+   "country": "Democratic Republic of the Congo",
+   "lat": -5.8975,
+   "lng": 22.4172
+  },
+  {
+   "code": "KANDAHAR",
+   "name": "Kandahar",
+   "country": "Afghanistan",
+   "lat": 31.6289,
+   "lng": 65.7372
+  },
+  {
+   "code": "KANYABAYONGA",
+   "name": "Kanyabayonga",
+   "country": "Democratic Republic of the Congo",
+   "lat": -0.6951,
+   "lng": 29.1798
+  },
+  {
+   "code": "KARACHI",
+   "name": "Karachi",
+   "country": "Pakistan",
+   "lat": 24.8607,
+   "lng": 67.0011
+  },
+  {
+   "code": "KARBALA",
+   "name": "Karbala",
+   "country": "Iraq",
+   "lat": 32.6027,
+   "lng": 44.0197
+  },
+  {
+   "code": "KASS",
+   "name": "Kass",
+   "country": "Sudan",
+   "lat": 36.1999,
+   "lng": 29.6396
+  },
+  {
+   "code": "KASSALA",
+   "name": "Kassala",
+   "country": "Sudan",
+   "lat": 15.4581,
+   "lng": 36.404
+  },
+  {
+   "code": "KATALE",
+   "name": "Katale",
+   "country": "Democratic Republic of the Congo",
+   "lat": 17.3032,
+   "lng": 73.2824
+  },
+  {
+   "code": "KATHMANDU",
+   "name": "Kathmandu",
+   "country": "Nepal",
+   "lat": 27.7172,
+   "lng": 85.324
+  },
+  {
+   "code": "KAYA",
+   "name": "Kaya",
+   "country": "Burkina Faso",
+   "lat": 13.091,
+   "lng": -1.0874
+  },
+  {
+   "code": "KEBRIDEHAR",
+   "name": "Kebridehar",
+   "country": "Ethiopia",
+   "lat": 6.7417,
+   "lng": 44.2621
+  },
+  {
+   "code": "KHARKIV",
+   "name": "Kharkiv",
+   "country": "Ukraine",
+   "lat": 49.9935,
+   "lng": 36.2304
+  },
+  {
+   "code": "KHARTOUM",
+   "name": "Khartoum",
+   "country": "Sudan",
+   "lat": 15.5007,
+   "lng": 32.5599
+  },
+  {
+   "code": "KHORABECHE",
+   "name": "Khor Abeche",
+   "country": "Sudan (Chad)",
+   "lat": 13.8359,
+   "lng": 20.8434
+  },
+  {
+   "code": "KIDAL",
+   "name": "Kidal",
+   "country": "Mali",
+   "lat": 18.4521,
+   "lng": 1.4097
+  },
+  {
+   "code": "KIGALI",
+   "name": "Kigali",
+   "country": "Rwanda",
+   "lat": -1.9441,
+   "lng": 30.0619
+  },
+  {
+   "code": "KIGOMA",
+   "name": "Kigoma",
+   "country": "United Republic of Tanzania",
+   "lat": -4.8824,
+   "lng": 29.6615
+  },
+  {
+   "code": "KILINOCHI",
+   "name": "Kilinochi",
+   "country": "Sri Lanka",
+   "lat": 9.3803,
+   "lng": 80.377
+  },
+  {
+   "code": "KINDU",
+   "name": "Kindu",
+   "country": "Democratic Republic of the Congo",
+   "lat": -2.9492,
+   "lng": 25.9231
+  },
+  {
+   "code": "KINGSTON",
+   "name": "Kingston",
+   "country": "Jamaica",
+   "lat": 18.019487,
+   "lng": -76.829102
+  },
+  {
+   "code": "KINSHASA",
+   "name": "Kinshasa",
+   "country": "Democratic Republic of the Congo",
+   "lat": -4.4419,
+   "lng": 15.2663
+  },
+  {
+   "code": "KIRKUK",
+   "name": "Kirkuk",
+   "country": "Iraq",
+   "lat": 35.4666,
+   "lng": 44.3799
+  },
+  {
+   "code": "KISANGANI",
+   "name": "Kisangani",
+   "country": "Democratic Republic of the Congo",
+   "lat": 0.5185,
+   "lng": 25.2008
+  },
+  {
+   "code": "KISMAYO",
+   "name": "Kismayo",
+   "country": "Somalia",
+   "lat": -0.356,
+   "lng": 42.5461
+  },
+  {
+   "code": "KITGUM",
+   "name": "Kitgum",
+   "country": "Uganda",
+   "lat": 3.2885,
+   "lng": 32.8789
+  },
+  {
+   "code": "KITSHANGA",
+   "name": "Kitshanga",
+   "country": "Democratic Republic of the Congo",
+   "lat": -0.9816,
+   "lng": 28.6905
+  },
+  {
+   "code": "KIWANJA",
+   "name": "Kiwanja",
+   "country": "Democratic Republic of the Congo",
+   "lat": -1.1501,
+   "lng": 29.4266
+  },
+  {
+   "code": "KOBE",
+   "name": "Kobe",
+   "country": "Japan",
+   "lat": 34.6901,
+   "lng": 135.1956
+  },
+  {
+   "code": "KONGOLO",
+   "name": "Kongolo",
+   "country": "Democratic Republic of the Congo",
+   "lat": -5.3875,
+   "lng": 26.9911
+  },
+  {
+   "code": "KOTIDO",
+   "name": "Kotido",
+   "country": "Uganda",
+   "lat": 3.0062,
+   "lng": 34.1115
+  },
+  {
+   "code": "KOUKOU",
+   "name": "Koukou",
+   "country": "Chad",
+   "lat": 12.0069,
+   "lng": 21.659
+  },
+  {
+   "code": "KRAMATORSK",
+   "name": "Kramatorsk",
+   "country": "Ukraine",
+   "lat": 48.739,
+   "lng": 37.5844
+  },
+  {
+   "code": "KUAJOK",
+   "name": "Kuajok",
+   "country": "South Sudan",
+   "lat": 8.304,
+   "lng": 27.9934
+  },
+  {
+   "code": "KUALALUMPUR",
+   "name": "Kuala Lumpur",
+   "country": "Malaysia",
+   "lat": 3.139,
+   "lng": 101.6869
+  },
+  {
+   "code": "KUNDUZ",
+   "name": "Kunduz",
+   "country": "Afghanistan",
+   "lat": 36.7286,
+   "lng": 68.8681
+  },
+  {
+   "code": "KUPANG",
+   "name": "Kupang",
+   "country": "Indonesia",
+   "lat": -10.1772,
+   "lng": 123.607
+  },
+  {
+   "code": "KUTUMNORTHDARFUR",
+   "name": "Kutum (North Darfur)",
+   "country": "Sudan",
+   "lat": 14.2025,
+   "lng": 24.6638
+  },
+  {
+   "code": "KUWAIT",
+   "name": "Kuwait",
+   "country": "Kuwait",
+   "lat": 29.3117,
+   "lng": 47.4818
+  },
+  {
+   "code": "KIEV",
+   "name": "Kyiv",
+   "country": "Ukraine",
+   "lat": 50.4501,
+   "lng": 30.5234
+  },
+  {
+   "code": "LAPAZ",
+   "name": "La Paz",
+   "country": "Bolivia (Plurinational State of)",
+   "lat": -16.4897,
+   "lng": -68.1193
+  },
+  {
+   "code": "LAAYOUNE",
+   "name": "Laayoune",
+   "country": "Western Sahara",
+   "lat": 27.15,
+   "lng": -13.1991
+  },
+  {
+   "code": "LAGOS",
+   "name": "Lagos",
+   "country": "Nigeria",
+   "lat": 6.5244,
+   "lng": 3.3792
+  },
+  {
+   "code": "LAHORE",
+   "name": "Lahore",
+   "country": "Pakistan",
+   "lat": 31.5204,
+   "lng": 74.3587
+  },
+  {
+   "code": "LASCOLINAS",
+   "name": "Las Colinas",
+   "country": "Colombia",
+   "lat": 32.8959,
+   "lng": -96.9588
+  },
+  {
+   "code": "LASHIO",
+   "name": "Lashio",
+   "country": "Myanmar",
+   "lat": 22.9665,
+   "lng": 97.7525
+  },
+  {
+   "code": "LIBREVILLE",
+   "name": "Libreville",
+   "country": "Gabon",
+   "lat": 0.4162,
+   "lng": 9.4673
+  },
+  {
+   "code": "LILONGWE",
+   "name": "Lilongwe",
+   "country": "Malawi",
+   "lat": -13.9626,
+   "lng": 33.7741
+  },
+  {
+   "code": "LIMA",
+   "name": "Lima",
+   "country": "Peru",
+   "lat": -12.048584,
+   "lng": -77.057419
+  },
+  {
+   "code": "LIRA",
+   "name": "Lira",
+   "country": "Uganda",
+   "lat": 2.2581,
+   "lng": 32.8874
+  },
+  {
+   "code": "LISBON",
+   "name": "Lisbon",
+   "country": "Portugal",
+   "lat": 38.7223,
+   "lng": -9.1393
+  },
+  {
+   "code": "LOME",
+   "name": "Lome",
+   "country": "Togo",
+   "lat": 6.136629,
+   "lng": 1.222186
+  },
+  {
+   "code": "LDN",
+   "name": "London",
+   "country": "England",
+   "lat": 51.5072,
+   "lng": 0.1276
+  },
+  {
+   "code": "LUANDA",
+   "name": "Luanda",
+   "country": "Angola",
+   "lat": -8.8147,
+   "lng": 13.2302
+  },
+  {
+   "code": "LUBERO",
+   "name": "Lubero",
+   "country": "Democratic Republic of the Congo",
+   "lat": -0.155,
+   "lng": 29.2437
+  },
+  {
+   "code": "LUBUMBASHI",
+   "name": "Lubumbashi",
+   "country": "Democratic Republic of the Congo",
+   "lat": -11.6876,
+   "lng": 27.5026
+  },
+  {
+   "code": "LUHANSK",
+   "name": "Luhansk",
+   "country": "Ukraine",
+   "lat": 48.574,
+   "lng": 39.3078
+  },
+  {
+   "code": "LUSAKA",
+   "name": "Lusaka",
+   "country": "Zambia",
+   "lat": -15.3875,
+   "lng": 28.3228
+  },
+  {
+   "code": "LVIV",
+   "name": "Lviv",
+   "country": "Ukraine",
+   "lat": 49.8397,
+   "lng": 24.0297
+  },
+  {
+   "code": "MADRID",
+   "name": "Madrid",
+   "country": "Spain",
+   "lat": 40.4168,
+   "lng": -3.7038
+  },
+  {
+   "code": "MAIDUGURI",
+   "name": "Maiduguri",
+   "country": "Nigeria",
+   "lat": 11.8311,
+   "lng": 13.151
+  },
+  {
+   "code": "MAKSSAR",
+   "name": "Makssar",
+   "country": "Indonesia",
+   "lat": -5.1477,
+   "lng": 119.4327
+  },
+  {
+   "code": "MALABO",
+   "name": "Malabo",
+   "country": "Equatorial Guinea",
+   "lat": 3.755,
+   "lng": 8.7821
+  },
+  {
+   "code": "MALAKAL",
+   "name": "Malakal",
+   "country": "South Sudan",
+   "lat": 9.528,
+   "lng": 31.6682
+  },
+  {
+   "code": "MANAGUA",
+   "name": "Managua",
+   "country": "Nicaragua",
+   "lat": 12.115,
+   "lng": -86.2362
+  },
+  {
+   "code": "MANAMA",
+   "name": "Manama",
+   "country": "Bahrain",
+   "lat": 26.2235,
+   "lng": 50.5876
+  },
+  {
+   "code": "MANAWASHI",
+   "name": "Manawashi",
+   "country": "Sudan",
+   "lat": 10.983288,
+   "lng": 11.382521
+  },
+  {
+   "code": "MANILA",
+   "name": "Manila",
+   "country": "Philippines",
+   "lat": 14.5995,
+   "lng": 120.9842
+  },
+  {
+   "code": "MANONO",
+   "name": "Manono",
+   "country": "Democratic Republic of the Congo",
+   "lat": -7.288,
+   "lng": 27.4321
+  },
+  {
+   "code": "MAPUTO",
+   "name": "Maputo",
+   "country": "Mozambique",
+   "lat": -25.9692,
+   "lng": 32.5732
+  },
+  {
+   "code": "MARADI",
+   "name": "Maradi",
+   "country": "Niger",
+   "lat": 13.501,
+   "lng": 7.1036
+  },
+  {
+   "code": "MARIUPOL",
+   "name": "Mariupol",
+   "country": "Ukraine",
+   "lat": 47.0971,
+   "lng": 37.5434
+  },
+  {
+   "code": "MAROUA",
+   "name": "Maroua",
+   "country": "Cameroon",
+   "lat": 10.5925,
+   "lng": 14.321
+  },
+  {
+   "code": "MASERU",
+   "name": "Maseru",
+   "country": "Lesotho",
+   "lat": -29.3151,
+   "lng": 27.4869
+  },
+  {
+   "code": "MAYMANA",
+   "name": "Maymana",
+   "country": "Afghanistan",
+   "lat": 35.9178,
+   "lng": 64.7755
+  },
+  {
+   "code": "MAYSAN",
+   "name": "Maysan",
+   "country": "Iraq",
+   "lat": 31.8379,
+   "lng": 47.1421
+  },
+  {
+   "code": "MAZAR-I-SHARIF",
+   "name": "Mazar-I-Sharif",
+   "country": "Afghanistan",
+   "lat": 36.6926,
+   "lng": 67.118
+  },
+  {
+   "code": "MBABANE",
+   "name": "Mbabane",
+   "country": "Eswatini",
+   "lat": -26.3054,
+   "lng": 31.1367
+  },
+  {
+   "code": "MEDAN",
+   "name": "Medan",
+   "country": "Indonesia",
+   "lat": 3.5952,
+   "lng": 98.6722
+  },
+  {
+   "code": "MEDELLIN",
+   "name": "Medellin",
+   "country": "Colombia",
+   "lat": 6.2476,
+   "lng": -75.5658
+  },
+  {
+   "code": "MEKELLE",
+   "name": "Mekelle",
+   "country": "Ethiopia",
+   "lat": 13.4936,
+   "lng": 39.4657
+  },
+  {
+   "code": "MELUT",
+   "name": "Melut",
+   "country": "South Sudan",
+   "lat": 10.4403,
+   "lng": 32.2016
+  },
+  {
+   "code": "MENAKA",
+   "name": "Menaka",
+   "country": "Mali",
+   "lat": 15.9156,
+   "lng": 2.3962
+  },
+  {
+   "code": "MESETAS",
+   "name": "Mesetas",
+   "country": "Colombia",
+   "lat": 3.382,
+   "lng": -74.0438
+  },
+  {
+   "code": "MEXICOCITY",
+   "name": "Mexico City",
+   "country": "Mexico",
+   "lat": 19.4326,
+   "lng": -99.1332
+  },
+  {
+   "code": "MINEMBWE",
+   "name": "Minembwe",
+   "country": "Democratic Republic of the Congo",
+   "lat": -3.8424,
+   "lng": 28.7271
+  },
+  {
+   "code": "MINOVA",
+   "name": "Minova",
+   "country": "Democratic Republic of the Congo",
+   "lat": -1.7077,
+   "lng": 29.0213
+  },
+  {
+   "code": "MINSK",
+   "name": "Minsk",
+   "country": "Belarus",
+   "lat": 53.9006,
+   "lng": 27.559
+  },
+  {
+   "code": "MIRAVALLE",
+   "name": "Miravalle",
+   "country": "Colombia",
+   "lat": 4.5149,
+   "lng": -75.9176
+  },
+  {
+   "code": "MITROVICAKOSOVO",
+   "name": "Mitrovica (Kosovo)",
+   "country": "Serbia",
+   "lat": 42.8914,
+   "lng": 20.866
+  },
+  {
+   "code": "MOBA",
+   "name": "Moba",
+   "country": "Democratic Republic of the Congo",
+   "lat": -7.0368,
+   "lng": 29.7629
+  },
+  {
+   "code": "MOCOA",
+   "name": "Mocoa",
+   "country": "Colombia",
+   "lat": 1.1478,
+   "lng": -76.6481
+  },
+  {
+   "code": "MOGADISCIO",
+   "name": "Mogadiscio",
+   "country": "Somalia",
+   "lat": 2.0469,
+   "lng": 45.3182
+  },
+  {
+   "code": "MOMBASA",
+   "name": "Mombasa",
+   "country": "Kenya",
+   "lat": -4.0435,
+   "lng": 39.6682
+  },
+  {
+   "code": "MONROVIA",
+   "name": "Monrovia",
+   "country": "Liberia",
+   "lat": 6.3156,
+   "lng": -10.8074
+  },
+  {
+   "code": "MONTERIA",
+   "name": "Monteria",
+   "country": "Colombia",
+   "lat": 8.751,
+   "lng": -75.8785
+  },
+  {
+   "code": "MONTEVIDEO",
+   "name": "Montevideo",
+   "country": "Uruguay",
+   "lat": -34.9011,
+   "lng": -56.1645
+  },
+  {
+   "code": "MONTREAL",
+   "name": "Montreal",
+   "country": "Canada",
+   "lat": 45.5017,
+   "lng": -73.5673
+  },
+  {
+   "code": "MOPTI",
+   "name": "Mopti",
+   "country": "Mali",
+   "lat": 14.4874,
+   "lng": -4.1975
+  },
+  {
+   "code": "MORONI",
+   "name": "Moroni",
+   "country": "Comoros",
+   "lat": -11.7172,
+   "lng": 43.2473
+  },
+  {
+   "code": "MOROTO",
+   "name": "Moroto",
+   "country": "Uganda",
+   "lat": 2.5282,
+   "lng": 34.658
+  },
+  {
+   "code": "MOSCOW",
+   "name": "Moscow",
+   "country": "Russian Federation",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  {
+   "code": "MOSUL",
+   "name": "Mosul",
+   "country": "Iraq",
+   "lat": 36.3489,
+   "lng": 43.1577
+  },
+  {
+   "code": "MUTHANNA",
+   "name": "Muthanna",
+   "country": "Iraq",
+   "lat": 29.9133,
+   "lng": 45.2994
+  },
+  {
+   "code": "MUZAFFARABAD",
+   "name": "Muzaffarabad",
+   "country": "Pakistan",
+   "lat": 34.3551,
+   "lng": 73.4769
+  },
+  {
+   "code": "MWANZA",
+   "name": "Mwanza",
+   "country": "United Republic of Tanzania",
+   "lat": -2.5164,
+   "lng": 32.9175
+  },
+  {
+   "code": "MWENGA",
+   "name": "Mwenga",
+   "country": "Democratic Republic of the Congo",
+   "lat": -3.0412,
+   "lng": 28.4284
+  },
+  {
+   "code": "MYITKYINA",
+   "name": "Myitkyina",
+   "country": "Myanmar",
+   "lat": 25.3946,
+   "lng": 97.3841
+  },
+  {
+   "code": "NABLUS",
+   "name": "Nablus",
+   "country": "Occupied Territories",
+   "lat": 32.2227,
+   "lng": 35.2621
+  },
+  {
+   "code": "NAGOYA",
+   "name": "Nagoya",
+   "country": "Japan",
+   "lat": 35.1815,
+   "lng": 136.9066
+  },
+  {
+   "code": "NAIROBI",
+   "name": "Nairobi",
+   "country": "Kenya",
+   "lat": -1.2921,
+   "lng": 36.8219
+  },
+  {
+   "code": "NAQOURA",
+   "name": "Naqoura",
+   "country": "Lebanon",
+   "lat": 33.1183,
+   "lng": 35.1399
+  },
+  {
+   "code": "NAS",
+   "name": "Nassau",
+   "country": "Bahamas",
+   "lat": 25.059999,
+   "lng": -77.345001
+  },
+  {
+   "code": "NAYPYITAW",
+   "name": "Nay Pyi Taw",
+   "country": "Myanmar",
+   "lat": 19.7633,
+   "lng": 96.0785
+  },
+  {
+   "code": "NAZARETHNAZRET",
+   "name": "Nazareth (Nazret)",
+   "country": "Ethiopia",
+   "lat": 32.6996,
+   "lng": 35.3035
+  },
+  {
+   "code": "NDELE",
+   "name": "Ndele",
+   "country": "Central African Republic",
+   "lat": 8.4102,
+   "lng": 20.6482
+  },
+  {
+   "code": "NDJAMENA",
+   "name": "Ndjamena",
+   "country": "Chad",
+   "lat": 12.1348,
+   "lng": 15.0557
+  },
+  {
+   "code": "NEIVA",
+   "name": "Neiva",
+   "country": "Colombia",
+   "lat": 2.9345,
+   "lng": -75.2809
+  },
+  {
+   "code": "NEKEMTE",
+   "name": "Nekemte",
+   "country": "Ethiopia",
+   "lat": 9.0893,
+   "lng": 36.5554
+  },
+  {
+   "code": "NERTITI",
+   "name": "Nertiti",
+   "country": "Sudan",
+   "lat": 12.965,
+   "lng": 24.04305556
+  },
+  {
+   "code": "NEWDELHI",
+   "name": "New Delhi",
+   "country": "India",
+   "lat": 28.6139,
+   "lng": 77.209
+  },
+  {
+   "code": "NEWYORK",
+   "name": "New York",
+   "country": "United States of America",
+   "lat": 40.712776,
+   "lng": -74.005974
+  },
+  {
+   "code": "NIAMEY",
+   "name": "Niamey",
+   "country": "Niger",
+   "lat": 13.5116,
+   "lng": 2.1254
+  },
+  {
+   "code": "NICOSIA",
+   "name": "Nicosia",
+   "country": "Cyprus",
+   "lat": 35.1856,
+   "lng": 33.3823
+  },
+  {
+   "code": "NOUAKCHOTT",
+   "name": "Nouakchott",
+   "country": "Mauritania",
+   "lat": 18.0735,
+   "lng": -15.9582
+  },
+  {
+   "code": "NUKUALOFA",
+   "name": "Nuku'Alofa",
+   "country": "Tonga",
+   "lat": -21.1393,
+   "lng": -175.2049
+  },
+  {
+   "code": "NYABIONDO",
+   "name": "Nyabiondo",
+   "country": "Democratic Republic of the Congo",
+   "lat": -1.312218,
+   "lng": 28.730421
+  },
+  {
+   "code": "NYALA",
+   "name": "Nyala",
+   "country": "Sudan",
+   "lat": 12.0518,
+   "lng": 24.8805
+  },
+  {
+   "code": "NYAMILIMA",
+   "name": "Nyamilima",
+   "country": "Democratic Republic of the Congo",
+   "lat": -0.8798,
+   "lng": 29.5682
+  },
+  {
+   "code": "NYANZALE",
+   "name": "Nyanzale",
+   "country": "Democratic Republic of the Congo",
+   "lat": -1.0234,
+   "lng": 29.1129
+  },
+  {
+   "code": "OBO",
+   "name": "Obo",
+   "country": "Central African Republic",
+   "lat": 5.3956,
+   "lng": 26.4917
+  },
+  {
+   "code": "ODESSA",
+   "name": "Odessa",
+   "country": "Ukraine",
+   "lat": 46.4825,
+   "lng": 30.7233
+  },
+  {
+   "code": "OSAKA",
+   "name": "Osaka",
+   "country": "Japan",
+   "lat": 34.6937,
+   "lng": 135.5023
+  },
+  {
+   "code": "OSH",
+   "name": "Osh",
+   "country": "Kyrgyzstan",
+   "lat": 40.514,
+   "lng": 72.8161
+  },
+  {
+   "code": "OTTAWA",
+   "name": "Ottawa",
+   "country": "Canada",
+   "lat": 45.4215,
+   "lng": -75.6972
+  },
+  {
+   "code": "OUAGADOUGOU",
+   "name": "Ouagadougou",
+   "country": "Burkina Faso",
+   "lat": 12.3714,
+   "lng": -1.5197
+  },
+  {
+   "code": "Panama City",
+   "name": "Panama City",
+   "country": "Panama City",
+   "lat": 8.983333,
+   "lng": -79.51667
+  },
+  {
+   "code": "1470",
+   "name": "Paris",
+   "country": "France",
+   "lat": 48.864716,
+   "lng": 2.349014
+  },
+  {
+   "code": "PIBOR",
+   "name": "Pibor",
+   "country": "South Sudan",
+   "lat": 6.8002,
+   "lng": 33.1267
+  },
+  {
+   "code": "PODGORICA",
+   "name": "Podgorica",
+   "country": "Montenegro",
+   "lat": 42.4304,
+   "lng": 19.2594
+  },
+  {
+   "code": "POPAYAN",
+   "name": "Popayan",
+   "country": "Colombia",
+   "lat": 2.4448,
+   "lng": -76.6147
+  },
+  {
+   "code": "PORTLOUIS",
+   "name": "Port Louis",
+   "country": "Mauritius",
+   "lat": -20.1609,
+   "lng": 57.5012
+  },
+  {
+   "code": "PORTMORESBY",
+   "name": "Port Moresby",
+   "country": "Papua New Guinea",
+   "lat": -9.4438,
+   "lng": 147.190192
+  },
+  {
+   "code": "PORTOFSPAIN",
+   "name": "Port of Spain",
+   "country": "Trinidad and Tobago",
+   "lat": 10.6603,
+   "lng": -61.5086
+  },
+  {
+   "code": "PORTSUDAN",
+   "name": "Port Sudan",
+   "country": "Sudan",
+   "lat": 19.5903,
+   "lng": 37.1902
+  },
+  {
+   "code": "PORTVICTORIA",
+   "name": "Port Victoria",
+   "country": "Seychelles",
+   "lat": -34.4984,
+   "lng": 137.4872
+  },
+  {
+   "code": "PORT-AU-PRINCE",
+   "name": "Port-au-Prince",
+   "country": "Haiti",
+   "lat": 18.5944,
+   "lng": -72.3074
+  },
+  {
+   "code": "PRAGUE",
+   "name": "Prague",
+   "country": "Czech Republic",
+   "lat": 50.0755,
+   "lng": 14.4378
+  },
+  {
+   "code": "PRAIA",
+   "name": "Praia",
+   "country": "Cabo Verde",
+   "lat": 14.933,
+   "lng": -23.5133
+  },
+  {
+   "code": "PRETORIA",
+   "name": "Pretoria",
+   "country": "South Africa",
+   "lat": -25.7479,
+   "lng": 28.2293
+  },
+  {
+   "code": "PRISTINA",
+   "name": "Pristina",
+   "country": "Serbia",
+   "lat": 42.6629,
+   "lng": 21.1655
+  },
+  {
+   "code": "PUERTOASIS",
+   "name": "Puerto Asis",
+   "country": "Colombia",
+   "lat": 0.4985,
+   "lng": -76.4977
+  },
+  {
+   "code": "PULI-KHUMRI",
+   "name": "Puli-Khumri",
+   "country": "Afghanistan",
+   "lat": 35.9438,
+   "lng": 68.7095
+  },
+  {
+   "code": "PYONGYANG",
+   "name": "Pyongyang",
+   "country": "Democratic People's Republic of Korea",
+   "lat": 39.0392,
+   "lng": 125.7625
+  },
+  {
+   "code": "QADISIYAH",
+   "name": "Qadisiyah",
+   "country": "Iraq",
+   "lat": 32.0437,
+   "lng": 45.1495
+  },
+  {
+   "code": "QAMISHLI",
+   "name": "Qamishli",
+   "country": "Syrian Arab Republic",
+   "lat": 37.0549,
+   "lng": 41.2282
+  },
+  {
+   "code": "QUETTA",
+   "name": "Quetta",
+   "country": "Pakistan",
+   "lat": 30.1798,
+   "lng": 66.975
+  },
+  {
+   "code": "QUIBDO",
+   "name": "Quibdo",
+   "country": "Colombia",
+   "lat": 5.6956,
+   "lng": -76.6498
+  },
+  {
+   "code": "QUITO",
+   "name": "Quito",
+   "country": "Ecuador",
+   "lat": -0.1807,
+   "lng": -78.4678
+  },
+  {
+   "code": "RABAT",
+   "name": "Rabat",
+   "country": "Morocco",
+   "lat": 33.9716,
+   "lng": -6.8498
+  },
+  {
+   "code": "RAMALLAH",
+   "name": "Ramallah",
+   "country": "Occupied Territories",
+   "lat": 31.9038,
+   "lng": 35.195959
+  },
+  {
+   "code": "RIODEJANEIRO",
+   "name": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.908047,
+   "lng": -43.215751
+  },
+  {
+   "code": "RIYADH",
+   "name": "Riyadh",
+   "country": "Saudi Arabia",
+   "lat": 24.7136,
+   "lng": 46.6753
+  },
+  {
+   "code": "ROME",
+   "name": "Rome",
+   "country": "Italy",
+   "lat": 41.9028,
+   "lng": 12.4964
+  },
+  {
+   "code": "RUMBEKOLS",
+   "name": "Rumbek OLS",
+   "country": "South Sudan",
+   "lat": 6.8072,
+   "lng": 29.6789
+  },
+  {
+   "code": "RUTSHURU",
+   "name": "Rutshuru",
+   "country": "Democratic Republic of the Congo",
+   "lat": -1.1856,
+   "lng": 29.447
+  },
+  {
+   "code": "RWINDI",
+   "name": "Rwindi",
+   "country": "Democratic Republic of the Congo",
+   "lat": -0.7836,
+   "lng": 29.2931
+  },
+  {
+   "code": "SAADA",
+   "name": "Sa'ada",
+   "country": "Yemen",
+   "lat": 16.950804,
+   "lng": 43.747908
+  },
+  {
+   "code": "SABHA",
+   "name": "Sabha",
+   "country": "Libya",
+   "lat": 27.0365,
+   "lng": 14.429
+  },
+  {
+   "code": "SAKE",
+   "name": "Sake",
+   "country": "Democratic Republic of the Congo",
+   "lat": -1.5631,
+   "lng": 29.0518
+  },
+  {
+   "code": "SALAHADDIN",
+   "name": "Salah Ad Din",
+   "country": "Iraq",
+   "lat": 34.5338,
+   "lng": 43.4837
+  },
+  {
+   "code": "SANCRISTOBAL",
+   "name": "San Cristobal",
+   "country": "Venezuela (Bolivarian Republic of)",
+   "lat": 18.417574,
+   "lng": -70.111101
+  },
+  {
+   "code": "SANJOSE",
+   "name": "San Jose",
+   "country": "Costa Rica",
+   "lat": 37.3382,
+   "lng": -121.8863
+  },
+  {
+   "code": "SANJOSEDELGUAVIARE",
+   "name": "San Jose del Guaviare",
+   "country": "Colombia",
+   "lat": 2.5678,
+   "lng": -72.6397
+  },
+  {
+   "code": "SANJUAN",
+   "name": "San Juan",
+   "country": "Puerto Rico",
+   "lat": 18.4655,
+   "lng": -66.1057
+  },
+  {
+   "code": "SANSALVADOR",
+   "name": "San Salvador",
+   "country": "El Salvador",
+   "lat": 13.6929,
+   "lng": -89.2182
+  },
+  {
+   "code": "SANVICENTECAGUAN",
+   "name": "San Vicente Caguan",
+   "country": "Colombia",
+   "lat": 2.1136,
+   "lng": -74.7732
+  },
+  {
+   "code": "SANAA",
+   "name": "Sana'a",
+   "country": "Yemen",
+   "lat": 15.3694,
+   "lng": 44.191
+  },
+  {
+   "code": "SANGE",
+   "name": "Sange",
+   "country": "Democratic Republic of the Congo",
+   "lat": -3.091022,
+   "lng": 29.114364
+  },
+  {
+   "code": "SANTANDERQUILICHAO",
+   "name": "Santander Quilichao",
+   "country": "Colombia",
+   "lat": 3.009,
+   "lng": -76.4863
+  },
+  {
+   "code": "SANTIAGO",
+   "name": "Santiago",
+   "country": "Chile",
+   "lat": -33.4489,
+   "lng": -70.6693
+  },
+  {
+   "code": "SANTODOMINGO",
+   "name": "Santo Domingo",
+   "country": "Dominican Republic",
+   "lat": 18.4861,
+   "lng": -69.9312
+  },
+  {
+   "code": "SAODOMINGOS",
+   "name": "Sao Domingos",
+   "country": "Guinea-Bissau",
+   "lat": 12.40318,
+   "lng": -16.198396
+  },
+  {
+   "code": "SAOTOME",
+   "name": "Sao Tome",
+   "country": "Sao Tome and Principe",
+   "lat": 0.1864,
+   "lng": 6.6131
+  },
+  {
+   "code": "SARAFUMRA",
+   "name": "Saraf Umra",
+   "country": "Sudan",
+   "lat": 13.45,
+   "lng": 23.2667
+  },
+  {
+   "code": "SARAJEVO",
+   "name": "Sarajevo",
+   "country": "Bosnia and Herzegovina",
+   "lat": 43.8563,
+   "lng": 18.4131
+  },
+  {
+   "code": "SEMERA",
+   "name": "Semera",
+   "country": "Ethiopia",
+   "lat": 11.792806,
+   "lng": 41.005923
+  },
+  {
+   "code": "SEOUL",
+   "name": "Seoul",
+   "country": "Republic of Korea",
+   "lat": 37.5665,
+   "lng": 126.978
+  },
+  {
+   "code": "SHABUNDA",
+   "name": "Shabunda",
+   "country": "Democratic Republic of the Congo",
+   "lat": -2.6943,
+   "lng": 27.344
+  },
+  {
+   "code": "SHANGALTOBAYESHINGILTOBAYA",
+   "name": "Shangal Tobaye (Shingil Tobaya)",
+   "country": "Sudan",
+   "lat": 13.0167,
+   "lng": 25.25
+  },
+  {
+   "code": "SINCELEJO",
+   "name": "Sincelejo",
+   "country": "Colombia",
+   "lat": 9.3046,
+   "lng": -75.3906
+  },
+  {
+   "code": "SINGAPORE",
+   "name": "Singapore",
+   "country": "Singapore",
+   "lat": 1.3521,
+   "lng": 103.8198
+  },
+  {
+   "code": "SITTWAYSITTWE",
+   "name": "Sittway (Sittwe)",
+   "country": "Myanmar",
+   "lat": 20.1528,
+   "lng": 92.8677
+  },
+  {
+   "code": "SKOPJE",
+   "name": "Skopje",
+   "country": "North Macedonia",
+   "lat": 41.9981,
+   "lng": 21.4254
+  },
+  {
+   "code": "SOKHUMI",
+   "name": "Sokhumi",
+   "country": "Georgia",
+   "lat": 43.0015,
+   "lng": 41.0234
+  },
+  {
+   "code": "SOROTI",
+   "name": "Soroti",
+   "country": "Uganda",
+   "lat": 1.7132,
+   "lng": 33.6064
+  },
+  {
+   "code": "SORTONY",
+   "name": "Sortony",
+   "country": "Sudan",
+   "lat": 54.018679,
+   "lng": 23.78127
+  },
+  {
+   "code": "SRINAGAR",
+   "name": "Srinagar",
+   "country": "India",
+   "lat": 34.0837,
+   "lng": 74.7973
+  },
+  {
+   "code": "SULAYMANIAH",
+   "name": "Sulaymaniah",
+   "country": "Iraq",
+   "lat": 35.5558,
+   "lng": 45.4351
+  },
+  {
+   "code": "SUVA",
+   "name": "Suva",
+   "country": "Fiji",
+   "lat": -18.1405,
+   "lng": 178.4233
+  },
+  {
+   "code": "TAHOUA",
+   "name": "Tahoua",
+   "country": "Niger",
+   "lat": 14.901162,
+   "lng": 5.265166
+  },
+  {
+   "code": "TALLINN",
+   "name": "Tallinn",
+   "country": "Estonia",
+   "lat": 59.437,
+   "lng": 24.7536
+  },
+  {
+   "code": "TAMALE",
+   "name": "Tamale",
+   "country": "Ghana",
+   "lat": 9.4034,
+   "lng": -0.8424
+  },
+  {
+   "code": "TASHKENT",
+   "name": "Tashkent",
+   "country": "Uzbekistan",
+   "lat": 41.2995,
+   "lng": 69.2401
+  },
+  {
+   "code": "TBILISI",
+   "name": "Tbilisi",
+   "country": "Georgia",
+   "lat": 41.7151,
+   "lng": 44.8271
+  },
+  {
+   "code": "TEGUCIGALPA",
+   "name": "Tegucigalpa",
+   "country": "Honduras",
+   "lat": 14.065,
+   "lng": -87.1715
+  },
+  {
+   "code": "TEHRAN",
+   "name": "Tehran",
+   "country": "Iran (Islamic Republic of)",
+   "lat": 35.6892,
+   "lng": 51.389
+  },
+  {
+   "code": "TESSALIT",
+   "name": "Tessalit",
+   "country": "Mali",
+   "lat": 20.2574,
+   "lng": 0.991
+  },
+  {
+   "code": "THEHAGUE",
+   "name": "The Hague",
+   "country": "Netherlands",
+   "lat": 52.0705,
+   "lng": 4.3007
+  },
+  {
+   "code": "THIMPHU",
+   "name": "Thimphu",
+   "country": "Bhutan",
+   "lat": 27.4712,
+   "lng": 89.6339
+  },
+  {
+   "code": "TIBERIAS",
+   "name": "Tiberias",
+   "country": "Israel",
+   "lat": 32.7959,
+   "lng": 35.531
+  },
+  {
+   "code": "TIBU",
+   "name": "Tibu",
+   "country": "Colombia",
+   "lat": 8.6424,
+   "lng": -72.7377
+  },
+  {
+   "code": "TILLABERY",
+   "name": "Tillabery",
+   "country": "Niger",
+   "lat": 14.2061,
+   "lng": 1.458
+  },
+  {
+   "code": "TINDOUF",
+   "name": "Tindouf",
+   "country": "Algeria",
+   "lat": 27.6719,
+   "lng": -8.1398
+  },
+  {
+   "code": "TIRANA",
+   "name": "Tirana",
+   "country": "Albania",
+   "lat": 41.3275,
+   "lng": 19.8187
+  },
+  {
+   "code": "TOKYO",
+   "name": "Tokyo",
+   "country": "Japan",
+   "lat": 35.6762,
+   "lng": 139.6503
+  },
+  {
+   "code": "TOMBOUCTOU",
+   "name": "Tombouctou",
+   "country": "Mali",
+   "lat": 16.7666,
+   "lng": -3.0026
+  },
+  {
+   "code": "TORIT",
+   "name": "Torit",
+   "country": "South Sudan",
+   "lat": 4.4102,
+   "lng": 32.574
+  },
+  {
+   "code": "TOYAMA",
+   "name": "Toyama",
+   "country": "Japan",
+   "lat": 36.6958,
+   "lng": 137.2137
+  },
+  {
+   "code": "TRIPOLI",
+   "name": "Tripoli",
+   "country": "Lebanon",
+   "lat": 32.8872,
+   "lng": 13.1913
+  },
+  {
+   "code": "TSHIKAPA",
+   "name": "Tshikapa",
+   "country": "Democratic Republic of the Congo",
+   "lat": -6.4192,
+   "lng": 20.7927
+  },
+  {
+   "code": "TUMACO",
+   "name": "Tumaco",
+   "country": "Colombia",
+   "lat": 1.7874,
+   "lng": -78.7913
+  },
+  {
+   "code": "TUNIS",
+   "name": "Tunis",
+   "country": "Tunisia",
+   "lat": 36.8065,
+   "lng": 10.1815
+  },
+  {
+   "code": "TURIN",
+   "name": "Turin",
+   "country": "Italy",
+   "lat": 45.0703,
+   "lng": 7.6869
+  },
+  {
+   "code": "ULANBATOR",
+   "name": "ULAN BATOR",
+   "country": "Mongolia",
+   "lat": 47.8864,
+   "lng": 106.9057
+  },
+  {
+   "code": "UVIRA",
+   "name": "Uvira",
+   "country": "Democratic Republic of the Congo",
+   "lat": -3.3729,
+   "lng": 29.1449
+  },
+  {
+   "code": "VALENCIA",
+   "name": "Valencia",
+   "country": "Spain",
+   "lat": 39.4699,
+   "lng": -0.3763
+  },
+  {
+   "code": "VALLEDUPAR",
+   "name": "Valledupar",
+   "country": "Colombia",
+   "lat": 10.4742,
+   "lng": -73.2436
+  },
+  {
+   "code": "VIENNA",
+   "name": "Vienna",
+   "country": "Austria",
+   "lat": 48.2082,
+   "lng": 16.3738
+  },
+  {
+   "code": "VIENTIANE",
+   "name": "Vientiane",
+   "country": "Lao People's Democratic Republic",
+   "lat": 17.9757,
+   "lng": 102.6331
+  },
+  {
+   "code": "VILLAVICENCIO",
+   "name": "Villavicencio",
+   "country": "Colombia",
+   "lat": 4.1492,
+   "lng": -73.6285
+  },
+  {
+   "code": "VISTAHERMOSA",
+   "name": "Vista Hermosa",
+   "country": "Colombia",
+   "lat": 10.377877,
+   "lng": -75.494971
+  },
+  {
+   "code": "WAJIR",
+   "name": "Wajir",
+   "country": "Kenya",
+   "lat": 1.7488,
+   "lng": 40.0586
+  },
+  {
+   "code": "WALIKALE",
+   "name": "Walikale",
+   "country": "Democratic Republic of the Congo",
+   "lat": -1.413212,
+   "lng": 28.072522
+  },
+  {
+   "code": "WALUNGU",
+   "name": "Walungu",
+   "country": "Democratic Republic of the Congo",
+   "lat": -2.7081,
+   "lng": 28.6469
+  },
+  {
+   "code": "WARSAW",
+   "name": "Warsaw",
+   "country": "Poland",
+   "lat": 52.2297,
+   "lng": 21.0122
+  },
+  {
+   "code": "WASHINGTONDC",
+   "name": "Washington DC",
+   "country": "United States of America",
+   "lat": 38.9072,
+   "lng": -77.0369
+  },
+  {
+   "code": "WASIT",
+   "name": "Wasit",
+   "country": "Iraq",
+   "lat": 32.6024,
+   "lng": 45.7521
+  },
+  {
+   "code": "WAU",
+   "name": "Wau",
+   "country": "South Sudan",
+   "lat": 7.7092,
+   "lng": 27.9835
+  },
+  {
+   "code": "WILLEMSTAD",
+   "name": "Willemstad",
+   "country": "Netherlands",
+   "lat": 51.6919,
+   "lng": 4.4379
+  },
+  {
+   "code": "WINDHOEK",
+   "name": "Windhoek",
+   "country": "Namibia",
+   "lat": -22.5609,
+   "lng": 17.0658
+  },
+  {
+   "code": "YAMBIO",
+   "name": "Yambio",
+   "country": "South Sudan",
+   "lat": 4.5776,
+   "lng": 28.3988
+  },
+  {
+   "code": "YANGON",
+   "name": "Yangon",
+   "country": "Myanmar",
+   "lat": 16.8409,
+   "lng": 96.1735
+  },
+  {
+   "code": "YAOUNDE",
+   "name": "Yaounde",
+   "country": "Cameroon",
+   "lat": 3.848,
+   "lng": 11.5021
+  },
+  {
+   "code": "YEI",
+   "name": "Yei",
+   "country": "South Sudan",
+   "lat": 4.0953,
+   "lng": 30.6775
+  },
+  {
+   "code": "YEREVAN",
+   "name": "Yerevan",
+   "country": "Armenia",
+   "lat": 40.1872,
+   "lng": 44.5152
+  },
+  {
+   "code": "YOLA",
+   "name": "Yola",
+   "country": "Nigeria",
+   "lat": 9.2035,
+   "lng": 12.4954
+  },
+  {
+   "code": "ZALINGEI",
+   "name": "Zalingei",
+   "country": "Sudan",
+   "lat": 12.8998,
+   "lng": 23.4769
+  },
+  {
+   "code": "ZEMIO",
+   "name": "Zemio",
+   "country": "Central African Republic",
+   "lat": 5.0309,
+   "lng": 25.1326
+  },
+  {
+   "code": "ZINDER",
+   "name": "Zinder",
+   "country": "Niger",
+   "lat": 13.8018,
+   "lng": 8.9853
+  },
+  {
+   "code": "ZUGDIDI",
+   "name": "Zugdidi",
+   "country": "Georgia",
+   "lat": 42.5091,
+   "lng": 41.867
+  }
+ ]
+}

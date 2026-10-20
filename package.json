@@ -1,0 +1,42 @@
+{
+  "name": "un-careers-world-of-possibilities",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Concept redesign of the UN Careers homepage: an immersive 3D experience. Not an official UN project.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "lint": "eslint .",
+    "assets": "node scripts/build-assets.mjs",
+    "data": "node scripts/fetch-un-data.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/inter-tight": "^5.3.0",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.59.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "sharp": "^0.35.5",
+    "typescript": "5.8",
+    "typescript-eslint": "^8.72.0",
+    "vite": "^6.4.4"
+  }
+}
