@@ -3,4 +3,6 @@
 interface ImportMetaEnv {
   /** Base URL of a proxy to https://careers.un.org/api. Defaults to the dev/preview proxy at /un-api. */
   readonly VITE_UN_API_BASE?: string;
+  /** "demo" (default) lists sample jobs; "live" lists real openings from UN Careers. */
+  readonly VITE_JOBS_MODE?: 'demo' | 'live';
 }

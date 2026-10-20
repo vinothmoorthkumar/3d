@@ -48,6 +48,21 @@ All copy, images, icons and the video come from the UN Careers home page in [Eng
 
 Copy and links live in `src/data/content.ts`. Asset credits are in [`public/CREDITS.md`](public/CREDITS.md).
 
+## Job Openings: demo mode (default)
+
+By default the Job Openings list shows **24 sample jobs** from `src/data/sampleJobs.ts`, not live vacancies.
+
+- Each sample has a `SAMPLE-0001`-style reference, a "Sample" badge and a dashed border. The list header says "Sample data – these are not real job openings" (French: "Données fictives – ces postes ne sont pas réels").
+- Sample cards have no "View Job Description" link, because there is no real posting to open.
+- Samples use real duty stations, job networks and categories from the official filters, so the keyword, Duty Station, Job Network and Category filters, Clear Filters, "See More" paging and the hero search all work. Dates are relative to today.
+- Only the main list is affected. The Consultancies/Internships dialogs, announcements and news stay live.
+
+Switch to real openings with an environment variable, e.g. in a `.env.local` file:
+
+```bash
+VITE_JOBS_MODE=live
+```
+
 ## About the live job data
 
 The UN Careers website calls an undocumented public API (`careers.un.org/api`). This concept calls the same endpoints. Nothing about vacancies is invented: titles, levels, locations, deadlines and counts all come from the API's responses.

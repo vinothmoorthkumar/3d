@@ -188,6 +188,9 @@ function buildContent(lang: Lang) {
       results: fr ? 'Postes vacants' : 'Job Openings',
       found: (n: string) => (fr ? `(${n} avis de vacance trouvés)` : `(${n} Jobs found)`),
       viewDescription: fr ? 'Consulter la description du poste' : 'View Job Description',
+      // Concept-only: labels for demo-mode sample jobs (VITE_JOBS_MODE=demo).
+      sampleData: fr ? 'Données fictives – ces postes ne sont pas réels' : 'Sample data – these are not real job openings',
+      sampleBadge: fr ? 'Exemple' : 'Sample',
       fields: fr
         ? {
             id: 'Référence',

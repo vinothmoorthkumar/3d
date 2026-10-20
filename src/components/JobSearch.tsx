@@ -4,10 +4,14 @@ import filters from '../data/un-filters.json';
 import { jobDetailUrl, officialSearchUrl, type Content } from '../data/content';
 import { useLang } from '../i18n';
 import { formatDate, searchJobs, type Job, type JobFilters } from '../lib/unApi';
+import { searchSampleJobs } from '../data/sampleJobs';
 import { SEARCH_EVENT } from './Hero';
 import { External } from './ui';
 
 const PER_PAGE = 6;
+
+/** Demo mode lists sample jobs instead of live openings. Set VITE_JOBS_MODE=live for real data. */
+const DEMO_MODE = (import.meta.env.VITE_JOBS_MODE ?? 'demo') === 'demo';
 
 type Form = { keyword: string; location: string; network: string; category: string };
 const empty: Form = { keyword: '', location: '', network: '', category: '' };
@@ -36,7 +40,8 @@ function JobCard({ job, c }: { job: Job; c: Content }) {
     [f.deadline, formatDate(job.endDate)],
   ];
   return (
-    <li className="job-card">
+    <li className={`job-card ${job.sample ? 'job-card--sample' : ''}`}>
+      {job.sample && <span className="sample-badge">{c.jobs.sampleBadge}</span>}
       <h4 className="job-card__title">{job.title}</h4>
       <dl className="job-card__fields">
         {rows
@@ -48,9 +53,12 @@ function JobCard({ job, c }: { job: Job; c: Content }) {
             </div>
           ))}
       </dl>
-      <External className="link-arrow job-card__link" href={jobDetailUrl(job.jobId, c.lang)}>
-        {c.jobs.viewDescription}
-      </External>
+      {/* Sample jobs have no real job description to link to. */}
+      {!job.sample && (
+        <External className="link-arrow job-card__link" href={jobDetailUrl(job.jobId, c.lang)}>
+          {c.jobs.viewDescription}
+        </External>
+      )}
     </li>
   );
 }
@@ -79,7 +87,9 @@ export default function JobSearch() {
     if (nextPage === 0) setStatus('loading');
     else setLoadingMore(true);
     try {
-      const res = await searchJobs(toFilters(f), nextPage, PER_PAGE, ctrl.signal, langRef.current);
+      const res = DEMO_MODE
+        ? await searchSampleJobs(toFilters(f), nextPage, PER_PAGE, langRef.current)
+        : await searchJobs(toFilters(f), nextPage, PER_PAGE, ctrl.signal, langRef.current);
       setJobs((prev) => (nextPage === 0 ? res.jobs : [...prev, ...res.jobs]));
       setTotal(res.total);
       setPage(nextPage);
@@ -221,6 +231,7 @@ export default function JobSearch() {
                 <span className="results__count">{c.jobs.found(total.toLocaleString(lang))}</span>
               )}
             </h3>
+            {DEMO_MODE && <p className="sample-note">{c.jobs.sampleData}</p>}
             <External className="link-arrow" href={officialUrl}>
               {c.ui.seeMore}
             </External>

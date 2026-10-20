@@ -13,7 +13,8 @@ export type Lang = 'en' | 'fr';
 export type JobFilters = { keyword?: string; ds?: string[]; jn?: string[]; jc?: string[] };
 
 export type Job = {
-  jobId: number;
+  /** Numeric for real openings; "SAMPLE-0001" style for demo data. */
+  jobId: number | string;
   title: string;
   network: string;
   family: string;
@@ -23,6 +24,8 @@ export type Job = {
   department: string;
   startDate: string;
   endDate: string;
+  /** True for demo-mode sample jobs (see data/sampleJobs.ts). */
+  sample?: boolean;
 };
 
 type RawJob = {
