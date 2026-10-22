@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 import { featuredHubs, officialSearchUrl } from '../data/content';
 import { useLang } from '../i18n';
 import { locationByCode, locations } from '../lib/locations';
-import { hasWebGL, useInView, useIsMobile, useReducedMotion } from '../lib/hooks';
+import { hasWebGL, useIdleReady, useInView, useIsMobile, useReducedMotion } from '../lib/hooks';
 import { External, SceneBoundary, StaticEarth } from './ui';
 
 const PresenceScene = lazy(() => import('../three/PresenceScene'));
@@ -13,7 +13,11 @@ export default function GlobalOpportunities() {
   const { c, lang } = useLang();
   const ids = useId();
   const ref = useRef<HTMLElement>(null);
-  const { seen, visible } = useInView(ref, '300px');
+  // Set the scene up shortly after page load (or earlier if the visitor gets close), so its setup
+  // cost is paid while they are still at the top, not while scrolling past the globe.
+  const { seen: near, visible } = useInView(ref, '300px');
+  const idle = useIdleReady(1500);
+  const seen = near || idle;
   const mobile = useIsMobile();
   const reducedMotion = useReducedMotion();
   const [webgl] = useState(hasWebGL);

@@ -27,7 +27,9 @@ export default function HorizonScene({ active, reducedMotion, mobile }: { active
     <Canvas
       camera={{ fov: mobile ? 50 : 34, position: [0, 0, 1.75], near: 0.05, far: 120 }}
       dpr={mobile ? [1, 1.5] : [1, 1.75]}
-      frameloop={active ? 'always' : 'never'}
+      // 'demand' draws the first frame (texture upload, shader compile) as soon as the scene mounts
+      // off-screen, then idles; it animates only while visible.
+      frameloop={active ? 'always' : 'demand'}
       gl={{ antialias: true, alpha: true }}
       aria-hidden="true"
     >

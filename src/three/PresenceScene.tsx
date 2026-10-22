@@ -96,12 +96,15 @@ export default function PresenceScene({ hubs, selected, onSelect, active, reduce
     <Canvas
       camera={{ fov: 35, position: start, near: 0.1, far: 120 }}
       dpr={mobile ? [1, 1.5] : [1, 1.75]}
-      frameloop={active ? 'always' : 'never'}
+      // 'demand' draws the first frame (texture upload, shader compile) as soon as the scene mounts
+      // off-screen, then idles; it animates only while visible.
+      frameloop={active ? 'always' : 'demand'}
       gl={{ antialias: true, alpha: true }}
     >
       <Stars count={mobile ? 300 : 700} />
       <Suspense fallback={null}>
-        <Earth hiRes={!mobile} segments={mobile ? 64 : 112} spin={!reducedMotion} atmosphere={0.9} sunFollowsCamera>
+        {/* 2K textures: the globe is at most ~600px wide, and a 4K upload stalls the main thread while scrolling. */}
+        <Earth hiRes={false} segments={mobile ? 64 : 112} spin={!reducedMotion} atmosphere={0.9} sunFollowsCamera>
           <DutyStationDots active={selected ? [selected] : []} opacity={0.6} size={mobile ? 7 : 8} />
           {hubLocations.map((l) => (
             <HubMarker key={l.code} location={l} selected={l.code === selected} onSelect={() => onSelect(l.code)} />
@@ -113,7 +116,8 @@ export default function PresenceScene({ hubs, selected, onSelect, active, reduce
         ref={controls}
         makeDefault
         enablePan={false}
-        enableZoom={!mobile}
+        // No wheel zoom: the mouse wheel must always scroll the page, even with the cursor over the globe.
+        enableZoom={false}
         minDistance={2.6}
         maxDistance={5}
         rotateSpeed={0.5}

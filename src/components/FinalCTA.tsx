@@ -1,7 +1,7 @@
 import { lazy, Suspense, useRef, useState } from 'react';
 import { Play } from 'lucide-react';
 import { useLang } from '../i18n';
-import { hasWebGL, useInView, useIsMobile, useReducedMotion } from '../lib/hooks';
+import { hasWebGL, useIdleReady, useInView, useIsMobile, useReducedMotion } from '../lib/hooks';
 import { External, SceneBoundary, StaticEarth } from './ui';
 
 const HorizonScene = lazy(() => import('../three/HorizonScene'));
@@ -10,7 +10,10 @@ const HorizonScene = lazy(() => import('../three/HorizonScene'));
 export default function FinalCTA() {
   const { c } = useLang();
   const ref = useRef<HTMLElement>(null);
-  const { seen, visible } = useInView(ref, '300px');
+  // Set up after the presence globe (see GlobalOpportunities) so the two setups never coincide.
+  const { seen: near, visible } = useInView(ref, '300px');
+  const idle = useIdleReady(3500);
+  const seen = near || idle;
   const mobile = useIsMobile();
   const reducedMotion = useReducedMotion();
   const [webgl] = useState(hasWebGL);

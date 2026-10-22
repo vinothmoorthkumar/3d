@@ -35,6 +35,26 @@ export function useInView(ref: RefObject<Element | null>, margin = '200px') {
   return state;
 }
 
+/**
+ * Becomes true once the browser is idle, `delay` ms after mount. Used to set up heavy WebGL scenes
+ * (texture upload, shader compile) early, so that cost never lands while the visitor is scrolling.
+ */
+export function useIdleReady(delay: number) {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    let idle: number | undefined;
+    const timer = window.setTimeout(() => {
+      if ('requestIdleCallback' in window) idle = window.requestIdleCallback(() => setReady(true), { timeout: 3000 });
+      else setReady(true);
+    }, delay);
+    return () => {
+      window.clearTimeout(timer);
+      if (idle !== undefined) window.cancelIdleCallback(idle);
+    };
+  }, [delay]);
+  return ready;
+}
+
 let webglSupport: boolean | undefined;
 export function hasWebGL() {
   if (webglSupport !== undefined) return webglSupport;
